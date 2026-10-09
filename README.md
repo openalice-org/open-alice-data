@@ -147,6 +147,11 @@ models/            Local model files, e.g. models/eikos (git-ignored)
 | splink import or API errors in `make dedup` | splink 5 is incompatible. `make setup-dedup` pins 4.x; re-run it rather than installing splink into `.venv`. |
 | `make domains` takes hours | Embedding cache missing; see [Inputs that are not in git](#inputs-that-are-not-in-git). |
 
+## Maintainers
+
+- [MikoMikarro](https://github.com/MikoMikarro)
+- [PappaPellerin](https://github.com/PappaPellerin)
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
