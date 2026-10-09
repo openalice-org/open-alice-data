@@ -149,4 +149,4 @@ models/            Local model files, e.g. models/eikos (git-ignored)
 
 ## License
 
-MIT, see [LICENSE](LICENSE). The corpus builder in `corpus/` is a copy of Klared's `KTH.Tools.QuantumAuthors`; the changes made here are listed in [corpus/LOCAL_CHANGES.md](corpus/LOCAL_CHANGES.md).
+MIT, see [LICENSE](LICENSE).
