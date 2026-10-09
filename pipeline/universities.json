@@ -1,0 +1,321 @@
+{
+  "kth": {
+    "label": "KTH",
+    "openalex_institution_id": "https://openalex.org/I86987016",
+    "applicant_regex": "KTH|KUNGLIGA TEKNISKA|ROYAL INSTITUTE OF TECHNOLOGY",
+    "tier_prefix": "kth"
+  },
+  "chalmers": {
+    "label": "Chalmers",
+    "openalex_institution_id": "https://openalex.org/I66862912",
+    "applicant_regex": "CHALMERS",
+    "tier_prefix": "chalmers"
+  },
+  "lund": {
+    "label": "Lund",
+    "openalex_institution_id": "https://openalex.org/I187531555",
+    "applicant_regex": "LUND UNIVERSITY|LUNDS UNIVERSITET",
+    "tier_prefix": "lund"
+  },
+  "gothenburg": {
+    "label": "Gothenburg",
+    "openalex_institution_id": "https://openalex.org/I881427289",
+    "applicant_regex": "UNIVERSITY OF GOTHENBURG|GOTHENBURG UNIVERSITY|GOTEBORGS UNIVERSITET|GÖTEBORGS UNIVERSITET",
+    "tier_prefix": "gothenburg"
+  },
+  "stockholm": {
+    "label": "Stockholm University",
+    "openalex_institution_id": "https://openalex.org/I161593684",
+    "applicant_regex": "STOCKHOLM UNIVERSITY|STOCKHOLMS UNIVERSITET",
+    "tier_prefix": "stockholm"
+  },
+  "linkoping": {
+    "label": "Linköping University",
+    "openalex_institution_id": "https://openalex.org/I102134673",
+    "applicant_regex": "LINKÖPING UNIVERSITY|LINKOPING UNIVERSITY|LINKÖPINGS UNIVERSITET|LINKOPINGS UNIVERSITET",
+    "tier_prefix": "linkoping"
+  },
+  "umea": {
+    "label": "Umeå University",
+    "openalex_institution_id": "https://openalex.org/I90267481",
+    "applicant_regex": "UMEA UNIVERSITY|UMEÅ UNIVERSITY|UMEA UNIVERSITET|UMEÅ UNIVERSITET",
+    "tier_prefix": "umea"
+  },
+  "karolinska": {
+    "label": "Karolinska Institutet",
+    "openalex_institution_id": "https://openalex.org/I28166907",
+    "applicant_regex": "KAROLINSKA INSTITUTET",
+    "tier_prefix": "karolinska"
+  },
+  "uppsala": {
+    "label": "Uppsala University",
+    "openalex_institution_id": "https://openalex.org/I123387679",
+    "applicant_regex": "UPPSALA UNIVERSITY|UPPSALA UNIVERSITET",
+    "tier_prefix": "uppsala"
+  },
+  "oslo": {
+    "label": "University of Oslo (UiO)",
+    "openalex_institution_id": "https://openalex.org/I184942183",
+    "applicant_regex": "UNIVERSITY OF OSLO|UNIVERSITETET I OSLO",
+    "tier_prefix": "oslo"
+  },
+  "bergen": {
+    "label": "University of Bergen (UiB)",
+    "openalex_institution_id": "https://openalex.org/I4432739",
+    "applicant_regex": "UNIVERSITY OF BERGEN|UNIVERSITETET I BERGEN",
+    "tier_prefix": "bergen"
+  },
+  "ntnu": {
+    "label": "Norwegian University of Science and Technology (NTNU)",
+    "openalex_institution_id": "https://openalex.org/I204778367",
+    "applicant_regex": "NTNU|NORWEGIAN UNIVERSITY OF SCIENCE AND TECHNOLOGY|NORGES TEKNISK-NATURVITENSKAPELIGE UNIVERSITET",
+    "tier_prefix": "ntnu"
+  },
+  "uit": {
+    "label": "UiT The Arctic University of Norway",
+    "openalex_institution_id": "https://openalex.org/I78037679",
+    "applicant_regex": "ARCTIC UNIVERSITY OF NORWAY|UNIVERSITY OF TROMS[OØ]|UNIVERSITETET I TROMS[OØ]",
+    "tier_prefix": "uit"
+  },
+  "nmbu": {
+    "label": "Norwegian University of Life Sciences (NMBU)",
+    "openalex_institution_id": "https://openalex.org/I54108979",
+    "applicant_regex": "NMBU|NORWEGIAN UNIVERSITY OF LIFE SCIENCES|NORGES MILJO- OG BIOVITENSKAPELIGE UNIVERSITET",
+    "tier_prefix": "nmbu"
+  },
+  "stavanger": {
+    "label": "University of Stavanger (UiS)",
+    "openalex_institution_id": "https://openalex.org/I92008406",
+    "applicant_regex": "UNIVERSITY OF STAVANGER|UNIVERSITETET I STAVANGER",
+    "tier_prefix": "stavanger"
+  },
+  "agder": {
+    "label": "University of Agder (UiA)",
+    "openalex_institution_id": "https://openalex.org/I200650556",
+    "applicant_regex": "UNIVERSITY OF AGDER|UNIVERSITETET I AGDER",
+    "tier_prefix": "agder"
+  },
+  "nord": {
+    "label": "Nord University",
+    "openalex_institution_id": "https://openalex.org/I2802079931",
+    "applicant_regex": "NORD UNIVERSITY|NORD UNIVERSITET",
+    "tier_prefix": "nord"
+  },
+  "oslomet": {
+    "label": "OsloMet – Oslo Metropolitan University",
+    "openalex_institution_id": "https://openalex.org/I184531372",
+    "applicant_regex": "OSLOMET|OSLO METROPOLITAN UNIVERSITY",
+    "tier_prefix": "oslomet"
+  },
+  "usn": {
+    "label": "University of South-Eastern Norway (USN)",
+    "openalex_institution_id": "https://openalex.org/I2801380234",
+    "applicant_regex": "UNIVERSITY OF SOUTH-EASTERN NORWAY|UNIVERSITETET I S[OØ]R[OØ]ST-NORGE",
+    "tier_prefix": "usn"
+  },
+  "inland_norway": {
+    "label": "University of Inland Norway",
+    "openalex_institution_id": "https://openalex.org/I4210116649",
+    "applicant_regex": "INLAND NORWAY UNIVERSITY OF APPLIED SCIENCES|UNIVERSITY OF INLAND NORWAY|H[OØ]GSKOLEN I INNLANDET",
+    "tier_prefix": "inland_norway"
+  },
+  "iceland": {
+    "label": "University of Iceland",
+    "openalex_institution_id": "https://openalex.org/I165368041",
+    "applicant_regex": "UNIVERSITY OF ICELAND|HASKOLI ISLANDS|H[AÁ]SK[OÓ]LI [IÍ]SLANDS",
+    "tier_prefix": "iceland"
+  },
+  "akureyri": {
+    "label": "University of Akureyri",
+    "openalex_institution_id": "https://openalex.org/I61174481",
+    "applicant_regex": "UNIVERSITY OF AKUREYRI|HASKOLINN A AKUREYRI|H[AÁ]SK[OÓ]LINN [AÁ] AKUREYRI",
+    "tier_prefix": "akureyri"
+  },
+  "agricultural_iceland": {
+    "label": "Agricultural University of Iceland",
+    "openalex_institution_id": "https://openalex.org/I119476548",
+    "applicant_regex": "AGRICULTURAL UNIVERSITY OF ICELAND|LANDBUNADARHASKOLI ISLANDS|LANDB[UÚ]NA[DÐ]ARH[AÁ]SK[OÓ]LI [IÍ]SLANDS",
+    "tier_prefix": "agricultural_iceland"
+  },
+  "holar": {
+    "label": "Hólar University",
+    "openalex_institution_id": "https://openalex.org/I204557473",
+    "applicant_regex": "H[OÓ]LAR UNIVERSITY|HASKOLINN A HOLUM|H[AÁ]SK[OÓ]LINN [AÁ] H[OÓ]LUM",
+    "tier_prefix": "holar"
+  },
+  "reykjavik": {
+    "label": "Reykjavík University",
+    "openalex_institution_id": "https://openalex.org/I123185442",
+    "applicant_regex": "REYKJAV[IÍ]K UNIVERSITY|HASKOLINN I REYKJAVIK|H[AÁ]SK[OÓ]LINN [IÍ] REYKJAV[IÍ]K",
+    "tier_prefix": "reykjavik"
+  },
+  "copenhagen": {
+    "label": "University of Copenhagen",
+    "openalex_institution_id": "https://openalex.org/I124055696",
+    "applicant_regex": "UNIVERSITY OF COPENHAGEN|K[OØ]BENHAVNS UNIVERSITET",
+    "tier_prefix": "copenhagen"
+  },
+  "aarhus": {
+    "label": "Aarhus University",
+    "openalex_institution_id": "https://openalex.org/I204337017",
+    "applicant_regex": "AARHUS UNIVERSITY|AARHUS UNIVERSITET",
+    "tier_prefix": "aarhus"
+  },
+  "southern_denmark": {
+    "label": "University of Southern Denmark",
+    "openalex_institution_id": "https://openalex.org/I177969490",
+    "applicant_regex": "UNIVERSITY OF SOUTHERN DENMARK|SYDDANSK UNIVERSITET",
+    "tier_prefix": "southern_denmark"
+  },
+  "roskilde": {
+    "label": "Roskilde University",
+    "openalex_institution_id": "https://openalex.org/I107707843",
+    "applicant_regex": "ROSKILDE UNIVERSITY|ROSKILDE UNIVERSITET",
+    "tier_prefix": "roskilde"
+  },
+  "aalborg": {
+    "label": "Aalborg University",
+    "openalex_institution_id": "https://openalex.org/I891191580",
+    "applicant_regex": "AALBORG UNIVERSITY|AALBORG UNIVERSITET",
+    "tier_prefix": "aalborg"
+  },
+  "dtu": {
+    "label": "Technical University of Denmark (DTU)",
+    "openalex_institution_id": "https://openalex.org/I96673099",
+    "applicant_regex": "TECHNICAL UNIVERSITY OF DENMARK|DANMARKS TEKNISKE UNIVERSITET|DTU",
+    "tier_prefix": "dtu"
+  },
+  "cbs": {
+    "label": "Copenhagen Business School (CBS)",
+    "openalex_institution_id": "https://openalex.org/I180519160",
+    "applicant_regex": "COPENHAGEN BUSINESS SCHOOL|CBS",
+    "tier_prefix": "cbs"
+  },
+  "it_copenhagen": {
+    "label": "IT University of Copenhagen",
+    "openalex_institution_id": "https://openalex.org/I83467386",
+    "applicant_regex": "IT UNIVERSITY OF COPENHAGEN|IT-UNIVERSITETET I K[OØ]BENHAVN",
+    "tier_prefix": "it_copenhagen"
+  },
+  "aalto": {
+    "label": "Aalto University",
+    "openalex_institution_id": "https://openalex.org/I9927081",
+    "applicant_regex": "AALTO UNIVERSITY|AALTO-YLIOPISTO|AALTO",
+    "tier_prefix": "aalto"
+  },
+  "helsinki": {
+    "label": "University of Helsinki",
+    "openalex_institution_id": "https://openalex.org/I133731052",
+    "applicant_regex": "UNIVERSITY OF HELSINKI|HELSINGIN YLIOPISTO",
+    "tier_prefix": "helsinki"
+  },
+  "eastern_finland": {
+    "label": "University of Eastern Finland",
+    "openalex_institution_id": "https://openalex.org/I175532246",
+    "applicant_regex": "UNIVERSITY OF EASTERN FINLAND|IT[AÄ]-SUOMEN YLIOPISTO",
+    "tier_prefix": "eastern_finland"
+  },
+  "jyvaskyla": {
+    "label": "University of Jyväskylä",
+    "openalex_institution_id": "https://openalex.org/I94722563",
+    "applicant_regex": "UNIVERSITY OF JYV[AÄ]SKYL[AÄ]|JYV[AÄ]SKYL[AÄ]N YLIOPISTO",
+    "tier_prefix": "jyvaskyla"
+  },
+  "lapland": {
+    "label": "University of Lapland",
+    "openalex_institution_id": "https://openalex.org/I95220073",
+    "applicant_regex": "UNIVERSITY OF LAPLAND|LAPIN YLIOPISTO",
+    "tier_prefix": "lapland"
+  },
+  "lut": {
+    "label": "LUT University",
+    "openalex_institution_id": "https://openalex.org/I63548447",
+    "applicant_regex": "LUT UNIVERSITY|LAPPEENRANTA UNIVERSITY OF TECHNOLOGY|LAPPEENRANNAN-LAHDEN TEKNILLINEN YLIOPISTO|LUT",
+    "tier_prefix": "lut"
+  },
+  "hanken": {
+    "label": "Hanken School of Economics",
+    "openalex_institution_id": "https://openalex.org/I5085271",
+    "applicant_regex": "HANKEN SCHOOL OF ECONOMICS|SVENSKA HANDELSH[OÖ]GSKOLAN|HANKEN",
+    "tier_prefix": "hanken"
+  },
+  "arts_helsinki": {
+    "label": "University of the Arts Helsinki",
+    "openalex_institution_id": "https://openalex.org/I302099661",
+    "applicant_regex": "UNIVERSITY OF THE ARTS HELSINKI|TAIDEYLIOPISTO",
+    "tier_prefix": "arts_helsinki"
+  },
+  "tampere": {
+    "label": "Tampere University",
+    "openalex_institution_id": "https://openalex.org/I166825849",
+    "applicant_regex": "TAMPERE UNIVERSITY|TAMPEREEN YLIOPISTO",
+    "tier_prefix": "tampere"
+  },
+  "turku": {
+    "label": "University of Turku",
+    "openalex_institution_id": "https://openalex.org/I155660961",
+    "applicant_regex": "UNIVERSITY OF TURKU|TURUN YLIOPISTO",
+    "tier_prefix": "turku"
+  },
+  "vaasa": {
+    "label": "University of Vaasa",
+    "openalex_institution_id": "https://openalex.org/I146978986",
+    "openalex_institution_id_aliases": ["https://openalex.org/I79765343"],
+    "applicant_regex": "UNIVERSITY OF VAASA|VAASAN YLIOPISTO",
+    "tier_prefix": "vaasa"
+  },
+  "abo_akademi": {
+    "label": "Åbo Akademi University",
+    "openalex_institution_id": "https://openalex.org/I130217899",
+    "applicant_regex": "[AÅ]BO AKADEMI",
+    "tier_prefix": "abo_akademi"
+  },
+  "tartu": {
+    "label": "University of Tartu",
+    "openalex_institution_id": "https://openalex.org/I56085075",
+    "applicant_regex": "UNIVERSITY OF TARTU|TARTU ÜLIKOOL",
+    "tier_prefix": "tartu"
+  },
+  "taltech": {
+    "label": "Tallinn University of Technology",
+    "openalex_institution_id": "https://openalex.org/I111112146",
+    "applicant_regex": "TALLINN UNIVERSITY OF TECHNOLOGY|TALTECH",
+    "tier_prefix": "taltech"
+  },
+  "latvia": {
+    "label": "University of Latvia",
+    "openalex_institution_id": "https://openalex.org/I91123046",
+    "applicant_regex": "UNIVERSITY OF LATVIA|LATVIJAS UNIVERSIT[AĀ]TE",
+    "tier_prefix": "latvia"
+  },
+  "riga_tech": {
+    "label": "Riga Technical University",
+    "openalex_institution_id": "https://openalex.org/I201787326",
+    "applicant_regex": "RIGA TECHNICAL UNIVERSITY|RIGAS TEHNISKA UNIVERSITATE",
+    "tier_prefix": "riga_tech"
+  },
+  "vilnius": {
+    "label": "Vilnius University",
+    "openalex_institution_id": "https://openalex.org/I173212132",
+    "applicant_regex": "VILNIUS UNIVERSITY|VILNIAUS UNIVERSITETAS",
+    "tier_prefix": "vilnius"
+  },
+  "kaunas_tech": {
+    "label": "Kaunas University of Technology",
+    "openalex_institution_id": "https://openalex.org/I172574986",
+    "applicant_regex": "KAUNAS UNIVERSITY OF TECHNOLOGY|KAUNO TECHNOLOGIJOS UNIVERSITETAS",
+    "tier_prefix": "kaunas_tech"
+  },
+  "ftmc": {
+    "label": "Center for Physical Sciences and Technology",
+    "openalex_institution_id": "https://openalex.org/I4210087412",
+    "applicant_regex": "CENTER FOR PHYSICAL SCIENCES AND TECHNOLOGY|FIZINIU IR TECHNOLOGIJOS MOKSLU CENTRAS|FTMC",
+    "tier_prefix": "ftmc"
+  },
+  "nordita": {
+    "label": "Nordita",
+    "openalex_institution_id": "https://openalex.org/I119971240",
+    "applicant_regex": "NORDITA|NORDIC INSTITUTE FOR THEORETICAL PHYSICS",
+    "tier_prefix": "nordita"
+  }
+}
