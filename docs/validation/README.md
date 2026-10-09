@@ -60,6 +60,7 @@ resolve paths relative to a parent workspace folder that contained `Qsip/SPRINT 
 | `abstract_availability.py` | Old corpus (above); `corpus/data/sweden_quantum_candidate_audit.csv` and `sweden_quantum_candidate_union.jsonl`. |
 | `churn_old_vs_new_corpus.py` | Old corpus; new corpus; `sweden_quantum_candidate_audit.csv`. |
 | `why_excluded.py` | Old corpus; new corpus; candidate audit CSV; `corpus/config/sweden_quantum_record_gates.json`. |
+| `keyword_evidence.py` | Old corpus; new corpus; candidate audit CSV; `corpus/config/sweden_quantum_paper_filter.json`. Shows that 73 % of the works the new rules drop had a quantum term only in the old OpenAlex keywords. |
 | `excluded_core_examples.py` | Old corpus; candidate audit CSV and union; `data/` labels. |
 | `live_all.py` | Old corpus; candidate audit CSV; union manifest; a valid OpenAlex key in `.env`; live OpenAlex access. Writes `data/live_all_result.json`. |
 | `headline_figure_impact.py` | A previously deployed `paper_counts_geo.json` (read from the app repo's git history) and a new `pipeline/data/paper_counts_geo.json`; `data/live_all_result.json`. |

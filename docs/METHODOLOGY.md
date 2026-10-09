@@ -73,8 +73,10 @@ that the earlier build had included and this build excluded (section 5) found th
 quarter are core quantum research. The cause is visible in the data: OpenAlex replaced the
 `keywords` field between the two builds. The old keywords were generic concepts ("Quantum
 mechanics", "Quantum tunnelling"); the new ones are paper-specific phrases ("exciton-polariton
-condensates", "effective Hamiltonian"). The old build often passed the literal-term check through
-one of those generic keywords. A clearly quantum paper whose title and abstract never use the
+condensates", "effective Hamiltonian"). For 73 % of the works (10,007 of 13,709) that the earlier build included and this one retrieves but excludes, a
+quantum term appeared only in the old keywords; 24.7 % had no quantum term anywhere (they were admitted on a topic
+or derived-keyword tag) and 2.3 % have one in the title or abstract
+(`docs/validation/scripts/keyword_evidence.py`). A clearly quantum paper whose title and abstract never use the
 word "quantum" (for example *Josephson scanning tunneling microscopy*) now has nothing for the
 rule to match. A text-semantic classifier does not depend on the field that changed.
 
