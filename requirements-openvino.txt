@@ -1,0 +1,8 @@
+# Environment for the OpenVINO-only steps (NPU embedding, Eikos labelling). `make setup-openvino`.
+# torch: install from the CPU index first (the Makefile does this): https://download.pytorch.org/whl/cpu
+openvino==2026.4.0
+torch==2.14.0
+# transformers 5.x broke SentencePiece tokenizers in an earlier test; stay on 4.57.6
+transformers==4.57.6
+numpy==2.4.6
+tqdm==4.70.1

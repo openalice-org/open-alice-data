@@ -1,0 +1,12 @@
+numpy==2.5.3
+scikit-learn==1.9.1
+requests==2.34.2
+python-dotenv==1.2.4
+# torch: install the CPU build first (see `make setup`); the default index pulls the multi-GB CUDA stack
+torch==2.14.1
+transformers==5.19.0
+tqdm==4.70.1
+# dedup/ only (own venv, `make setup-dedup`):
+# splink<5  (the dedup scripts use the 4.x Linker(db_api=...) API)
+# pandas
+# adapters  (only for build_people_data.py --method specter2; the pipeline uses --method heuristic)
