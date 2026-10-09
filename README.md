@@ -146,3 +146,7 @@ models/            Local model files, e.g. models/eikos (git-ignored)
 | NPU compile fails with `vclAllocatedExecutableCreate2` / `ZE_RESULT_ERROR_UNKNOWN` | Packaged compiler out of sync with the driver. See [docs/NPU_SETUP.md](docs/NPU_SETUP.md) and set `NPU_LIB`. |
 | splink import or API errors in `make dedup` | splink 5 is incompatible. `make setup-dedup` pins 4.x; re-run it rather than installing splink into `.venv`. |
 | `make domains` takes hours | Embedding cache missing; see [Inputs that are not in git](#inputs-that-are-not-in-git). |
+
+## License
+
+MIT, see [LICENSE](LICENSE). The corpus builder in `corpus/` is a copy of Klared's `KTH.Tools.QuantumAuthors`; the changes made here are listed in [corpus/LOCAL_CHANGES.md](corpus/LOCAL_CHANGES.md).
