@@ -1,0 +1,632 @@
+[
+  {
+    "orcid": "https://orcid.org/0000-0002-7059-1016",
+    "people": [
+      {
+        "id": "https://openalex.org/A5040141914",
+        "name": "Svend J. Knak Jensen",
+        "university": "Aarhus University"
+      },
+      {
+        "id": "https://openalex.org/A5054568046",
+        "name": "Svend Knak Jensen",
+        "university": "Aarhus University"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-1356-8477",
+    "people": [
+      {
+        "id": "https://openalex.org/A5042762272",
+        "name": "Leonas Valkūnas",
+        "university": "Vilnius University"
+      },
+      {
+        "id": "https://openalex.org/A5113496455",
+        "name": "Leonas Valkunas",
+        "university": "Center for Physical Sciences and Technology"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-9051-6243",
+    "people": [
+      {
+        "id": "https://openalex.org/A5111589119",
+        "name": "Mattias Marklund",
+        "university": "Umeå University"
+      },
+      {
+        "id": "https://openalex.org/A5112758587",
+        "name": "M. Marklund",
+        "university": "Umeå University"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-2939-6187",
+    "people": [
+      {
+        "id": "https://openalex.org/A5073301790",
+        "name": "Alexei Kalaboukhov",
+        "university": "Chalmers"
+      },
+      {
+        "id": "https://openalex.org/A5058926482",
+        "name": "Alexei Kalaboukhov",
+        "university": "Chalmers"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-9453-4924",
+    "people": [
+      {
+        "id": "https://openalex.org/A5077092010",
+        "name": "Lili Hou",
+        "university": "Chalmers"
+      },
+      {
+        "id": "https://openalex.org/A5143508673",
+        "name": "Lili Hou",
+        "university": "Chalmers"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-5726-1063",
+    "people": [
+      {
+        "id": "https://openalex.org/A5026097303",
+        "name": "Val Zwiller",
+        "university": "KTH"
+      },
+      {
+        "id": "https://openalex.org/A5062957496",
+        "name": "Val Zwiller",
+        "university": "KTH"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-4984-889X",
+    "people": [
+      {
+        "id": "https://openalex.org/A5055821119",
+        "name": "Alexander V. Balatsky",
+        "university": "KTH"
+      },
+      {
+        "id": "https://openalex.org/A5027218238",
+        "name": "A. V. Balatsky",
+        "university": "KTH"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-1406-5695",
+    "people": [
+      {
+        "id": "https://openalex.org/A5074680349",
+        "name": "Chong Qi",
+        "university": "KTH"
+      },
+      {
+        "id": "https://openalex.org/A5123629783",
+        "name": "Chong Qi",
+        "university": "KTH"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-2568-2485",
+    "people": [
+      {
+        "id": "https://openalex.org/A5041832682",
+        "name": "R. J. Liotta",
+        "university": "KTH"
+      },
+      {
+        "id": "https://openalex.org/A5052676804",
+        "name": "R. J. Liotta",
+        "university": "University of Copenhagen"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-0639-0639",
+    "people": [
+      {
+        "id": "https://openalex.org/A5085178088",
+        "name": "Stefano Markidis",
+        "university": "KTH"
+      },
+      {
+        "id": "https://openalex.org/A5070572735",
+        "name": "Stefano Markidis",
+        "university": "KTH"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-4158-3583",
+    "people": [
+      {
+        "id": "https://openalex.org/A5037069204",
+        "name": "Ivy Bo Peng",
+        "university": "KTH"
+      },
+      {
+        "id": "https://openalex.org/A5122360044",
+        "name": "Ivy Peng",
+        "university": "KTH"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-7250-0838",
+    "people": [
+      {
+        "id": "https://openalex.org/A5060600561",
+        "name": "J. Cederkäll",
+        "university": "Lund"
+      },
+      {
+        "id": "https://openalex.org/A5108074530",
+        "name": "J. Cederkäll",
+        "university": "Lund"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-2582-1740",
+    "people": [
+      {
+        "id": "https://openalex.org/A5100729278",
+        "name": "Feng wei Gao",
+        "university": "Linköping University"
+      },
+      {
+        "id": "https://openalex.org/A5123217061",
+        "name": "Feng Gao",
+        "university": "Linköping University"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-1428-5564",
+    "people": [
+      {
+        "id": "https://openalex.org/A5042720859",
+        "name": "Tõnu Pullerits",
+        "university": "Lund"
+      },
+      {
+        "id": "https://openalex.org/A5123129473",
+        "name": "Tönu Pullerits",
+        "university": "Lund"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-1335-4022",
+    "people": [
+      {
+        "id": "https://openalex.org/A5087194862",
+        "name": "Anne L’Huillier",
+        "university": "Lund"
+      },
+      {
+        "id": "https://openalex.org/A5076185911",
+        "name": "Ivan Sytcevich",
+        "university": "Lund"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-5027-1456",
+    "people": [
+      {
+        "id": "https://openalex.org/A5069509000",
+        "name": "Håkan Pettersson",
+        "university": "Lund"
+      },
+      {
+        "id": "https://openalex.org/A5059652976",
+        "name": "H. Pettersson",
+        "university": "Lund"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-9852-0183",
+    "people": [
+      {
+        "id": "https://openalex.org/A5136796209",
+        "name": "Thomas Bland",
+        "university": "Lund"
+      },
+      {
+        "id": "https://openalex.org/A5049172279",
+        "name": "Thomas Bland",
+        "university": "Lund"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-9608-543X",
+    "people": [
+      {
+        "id": "https://openalex.org/A5081474081",
+        "name": "M. Battaglia",
+        "university": "Stockholm University"
+      },
+      {
+        "id": "https://openalex.org/A5105229564",
+        "name": "M. C. Battaglia",
+        "university": "Stockholm University"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-0820-8722",
+    "people": [
+      {
+        "id": "https://openalex.org/A5108562285",
+        "name": "Mads Peter Sørensen",
+        "university": "Technical University of Denmark (DTU)"
+      },
+      {
+        "id": "https://openalex.org/A5078200707",
+        "name": "Mads Peter Soerensen",
+        "university": "Technical University of Denmark (DTU)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-6394-9174",
+    "people": [
+      {
+        "id": "https://openalex.org/A5055657704",
+        "name": "Micael Andrade Dias",
+        "university": "Technical University of Denmark (DTU)"
+      },
+      {
+        "id": "https://openalex.org/A5125186225",
+        "name": "Micael A. Dias",
+        "university": "Technical University of Denmark (DTU)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-8601-7246",
+    "people": [
+      {
+        "id": "https://openalex.org/A5034676393",
+        "name": "Stefano Moretti",
+        "university": "Uppsala University"
+      },
+      {
+        "id": "https://openalex.org/A5128257816",
+        "name": "Stefano Moretti",
+        "university": "Uppsala University"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0009-0005-4862-5370",
+    "people": [
+      {
+        "id": "https://openalex.org/A5017974378",
+        "name": "T. Alt",
+        "university": "University of Bergen (UiB)"
+      },
+      {
+        "id": "https://openalex.org/A5107828053",
+        "name": "T. Alt",
+        "university": "University of Bergen (UiB)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-3529-5171",
+    "people": [
+      {
+        "id": "https://openalex.org/A5077178294",
+        "name": "G. Eigen",
+        "university": "University of Bergen (UiB)"
+      },
+      {
+        "id": "https://openalex.org/A5107838594",
+        "name": "G. Eigen",
+        "university": "University of Bergen (UiB)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-1728-9272",
+    "people": [
+      {
+        "id": "https://openalex.org/A5043559433",
+        "name": "B. Stugu",
+        "university": "University of Bergen (UiB)"
+      },
+      {
+        "id": "https://openalex.org/A5142170733",
+        "name": "B. Stugu",
+        "university": "University of Bergen (UiB)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-9679-5466",
+    "people": [
+      {
+        "id": "https://openalex.org/A5103936431",
+        "name": "L.V. Bravina",
+        "university": "University of Oslo (UiO)"
+      },
+      {
+        "id": "https://openalex.org/A5113501850",
+        "name": "L. V. Bravina",
+        "university": "University of Oslo (UiO)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-4966-9584",
+    "people": [
+      {
+        "id": "https://openalex.org/A5113847767",
+        "name": "Dieter Rohrich",
+        "university": "University of Bergen (UiB)"
+      },
+      {
+        "id": "https://openalex.org/A5105788838",
+        "name": "Dieter Roehrich",
+        "university": "University of Bergen (UiB)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-4532-7544",
+    "people": [
+      {
+        "id": "https://openalex.org/A5068281694",
+        "name": "Z. Yin",
+        "university": "University of Bergen (UiB)"
+      },
+      {
+        "id": "https://openalex.org/A5103976539",
+        "name": "Zhongbao Yin",
+        "university": "University of Bergen (UiB)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-8279-9324",
+    "people": [
+      {
+        "id": "https://openalex.org/A5022685571",
+        "name": "O. S. AbouZeid",
+        "university": "University of Copenhagen"
+      },
+      {
+        "id": "https://openalex.org/A5107875663",
+        "name": "O. S. AbouZeid",
+        "university": "University of Copenhagen"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-6764-4789",
+    "people": [
+      {
+        "id": "https://openalex.org/A5120644337",
+        "name": "John Renner Hansen",
+        "university": "University of Copenhagen"
+      },
+      {
+        "id": "https://openalex.org/A5013845636",
+        "name": "P. H. Hansen",
+        "university": "University of Copenhagen"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-0002-4654",
+    "people": [
+      {
+        "id": "https://openalex.org/A5049364965",
+        "name": "A. Bilandzic",
+        "university": "University of Copenhagen"
+      },
+      {
+        "id": "https://openalex.org/A5107901112",
+        "name": "A. Bilandzic",
+        "university": "University of Copenhagen"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-6255-2279",
+    "people": [
+      {
+        "id": "https://openalex.org/A5087340274",
+        "name": "T. Grahn",
+        "university": "University of Jyväskylä"
+      },
+      {
+        "id": "https://openalex.org/A5056780837",
+        "name": "T. Grahn",
+        "university": "University of Jyväskylä"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-8540-9918",
+    "people": [
+      {
+        "id": "https://openalex.org/A5074223722",
+        "name": "Tommi Mikkonen",
+        "university": "University of Jyväskylä"
+      },
+      {
+        "id": "https://openalex.org/A5129602962",
+        "name": "Tommi Mikkonen",
+        "university": "University of Jyväskylä"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-2316-9565",
+    "people": [
+      {
+        "id": "https://openalex.org/A5104519189",
+        "name": "I. C. Arsene",
+        "university": "University of Oslo (UiO)"
+      },
+      {
+        "id": "https://openalex.org/A5107847423",
+        "name": "Ionut Cristian Arsene",
+        "university": "University of Oslo (UiO)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-3093-6769",
+    "people": [
+      {
+        "id": "https://openalex.org/A5082113550",
+        "name": "Evgeny E. Zabrodin",
+        "university": "University of Oslo (UiO)"
+      },
+      {
+        "id": "https://openalex.org/A5104546998",
+        "name": "Eugene E. Zabrodin",
+        "university": "University of Oslo (UiO)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-2188-3709",
+    "people": [
+      {
+        "id": "https://openalex.org/A5013484295",
+        "name": "A. C. Larsen",
+        "university": "University of Oslo (UiO)"
+      },
+      {
+        "id": "https://openalex.org/A5110495820",
+        "name": "A.C. Larsen",
+        "university": "University of Oslo (UiO)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-0683-5140",
+    "people": [
+      {
+        "id": "https://openalex.org/A5100715747",
+        "name": "E. Şahin",
+        "university": "University of Oslo (UiO)"
+      },
+      {
+        "id": "https://openalex.org/A5144378797",
+        "name": "E. Sahin",
+        "university": "University of Oslo (UiO)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0003-2332-5281",
+    "people": [
+      {
+        "id": "https://openalex.org/A5109582987",
+        "name": "Hans Kristian Eriksen",
+        "university": "University of Oslo (UiO)"
+      },
+      {
+        "id": "https://openalex.org/A5013812064",
+        "name": "H. K. Eriksen",
+        "university": "University of Oslo (UiO)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0009-0003-8796-4581",
+    "people": [
+      {
+        "id": "https://openalex.org/A5107872065",
+        "name": "Rasmus Larsen",
+        "university": "University of Stavanger (UiS)"
+      },
+      {
+        "id": "https://openalex.org/A5108143527",
+        "name": "Rasmus Norman Larsen",
+        "university": "University of Stavanger (UiS)"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-2181-8448",
+    "people": [
+      {
+        "id": "https://openalex.org/A5010371919",
+        "name": "V. Hizhnyakov",
+        "university": "University of Tartu"
+      },
+      {
+        "id": "https://openalex.org/A5043113862",
+        "name": "Vladimir Hizhnyakov",
+        "university": "University of Tartu"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-5995-9660",
+    "people": [
+      {
+        "id": "https://openalex.org/A5042434168",
+        "name": "Jörg Pieper",
+        "university": "University of Tartu"
+      },
+      {
+        "id": "https://openalex.org/A5080055019",
+        "name": "Jörg Pieper",
+        "university": "University of Tartu"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0001-5165-7553",
+    "people": [
+      {
+        "id": "https://openalex.org/A5052554493",
+        "name": "Mikhail I. Katsnelson",
+        "university": "Uppsala University"
+      },
+      {
+        "id": "https://openalex.org/A5076142044",
+        "name": "M. I. Katsnelson",
+        "university": "Uppsala University"
+      }
+    ]
+  },
+  {
+    "orcid": "https://orcid.org/0000-0002-7341-9115",
+    "people": [
+      {
+        "id": "https://openalex.org/A5115589102",
+        "name": "T. Ekelöf",
+        "university": "Uppsala University"
+      },
+      {
+        "id": "https://openalex.org/A5067970476",
+        "name": "Tord Johan Carl Ekelof",
+        "university": "Uppsala University"
+      }
+    ]
+  }
+]
