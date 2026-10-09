@@ -1,0 +1,1202 @@
+{
+ "rv_0001": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2806438117"
+ },
+ "rv_0002": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2000235989"
+ },
+ "rv_0003": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2951421052"
+ },
+ "rv_0004": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2285669715"
+ },
+ "rv_0005": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3103779198"
+ },
+ "rv_0006": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2887250267"
+ },
+ "rv_0007": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1981885723"
+ },
+ "rv_0008": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3102063259"
+ },
+ "rv_0009": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2904656352"
+ },
+ "rv_0010": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3105331331"
+ },
+ "rv_0011": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4382140325"
+ },
+ "rv_0012": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1993724526"
+ },
+ "rv_0013": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2032011921"
+ },
+ "rv_0014": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2055849988"
+ },
+ "rv_0015": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4381248332"
+ },
+ "rv_0016": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4389500301"
+ },
+ "rv_0017": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3099588158"
+ },
+ "rv_0018": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3102470653"
+ },
+ "rv_0019": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4396574771"
+ },
+ "rv_0020": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W7214468729"
+ },
+ "rv_0021": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1964280163"
+ },
+ "rv_0022": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4396626800"
+ },
+ "rv_0023": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3102709494"
+ },
+ "rv_0024": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2069264461"
+ },
+ "rv_0025": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2950983689"
+ },
+ "rv_0026": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2949542002"
+ },
+ "rv_0027": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2068590769"
+ },
+ "rv_0028": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2796241549"
+ },
+ "rv_0029": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4410550363"
+ },
+ "rv_0030": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4393986462"
+ },
+ "rv_0031": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4376618891"
+ },
+ "rv_0032": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4383342572"
+ },
+ "rv_0033": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2898025294"
+ },
+ "rv_0034": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2606696917"
+ },
+ "rv_0035": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2162595620"
+ },
+ "rv_0036": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4395686769"
+ },
+ "rv_0037": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2786020707"
+ },
+ "rv_0038": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1622980359"
+ },
+ "rv_0039": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3100913235"
+ },
+ "rv_0040": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3106252846"
+ },
+ "rv_0041": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2084685039"
+ },
+ "rv_0042": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W7163989017"
+ },
+ "rv_0043": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4399835875"
+ },
+ "rv_0044": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2943494647"
+ },
+ "rv_0045": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3137441361"
+ },
+ "rv_0046": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4390136370"
+ },
+ "rv_0047": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3045264316"
+ },
+ "rv_0048": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4390818280"
+ },
+ "rv_0049": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2892122828"
+ },
+ "rv_0050": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4399151978"
+ },
+ "rv_0051": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1993837434"
+ },
+ "rv_0052": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2084908635"
+ },
+ "rv_0053": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3099977145"
+ },
+ "rv_0054": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2078628389"
+ },
+ "rv_0055": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4415671782"
+ },
+ "rv_0056": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4225373093"
+ },
+ "rv_0057": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2367909678"
+ },
+ "rv_0058": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2004621580"
+ },
+ "rv_0059": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4301585274"
+ },
+ "rv_0060": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1978331678"
+ },
+ "rv_0061": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2022315592"
+ },
+ "rv_0062": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1576335119"
+ },
+ "rv_0063": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2001662789"
+ },
+ "rv_0064": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4403114022"
+ },
+ "rv_0065": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4388203049"
+ },
+ "rv_0066": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2033742019"
+ },
+ "rv_0067": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2335754226"
+ },
+ "rv_0068": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2564344929"
+ },
+ "rv_0069": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4407173944"
+ },
+ "rv_0070": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4408406858"
+ },
+ "rv_0071": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2512836605"
+ },
+ "rv_0072": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2329570707"
+ },
+ "rv_0073": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W7168365386"
+ },
+ "rv_0074": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2049616692"
+ },
+ "rv_0075": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4312119445"
+ },
+ "rv_0076": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2578087063"
+ },
+ "rv_0077": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2140658371"
+ },
+ "rv_0078": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2054948246"
+ },
+ "rv_0079": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2091894842"
+ },
+ "rv_0080": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2949850138"
+ },
+ "rv_0081": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4389116290"
+ },
+ "rv_0082": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1983203837"
+ },
+ "rv_0083": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1979185279"
+ },
+ "rv_0084": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W7167942261"
+ },
+ "rv_0085": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2044207728"
+ },
+ "rv_0086": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2620368074"
+ },
+ "rv_0087": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2035098416"
+ },
+ "rv_0088": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1998330933"
+ },
+ "rv_0089": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2167779705"
+ },
+ "rv_0090": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4393899014"
+ },
+ "rv_0091": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2075876331"
+ },
+ "rv_0092": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2972004659"
+ },
+ "rv_0093": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2761562715"
+ },
+ "rv_0094": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4408395095"
+ },
+ "rv_0095": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2037563717"
+ },
+ "rv_0096": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1988898274"
+ },
+ "rv_0097": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2024442581"
+ },
+ "rv_0098": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2673121628"
+ },
+ "rv_0099": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4417301027"
+ },
+ "rv_0100": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4390092322"
+ },
+ "rv_0101": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2005443269"
+ },
+ "rv_0102": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4404986788"
+ },
+ "rv_0103": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3047314901"
+ },
+ "rv_0104": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4213436247"
+ },
+ "rv_0105": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3205290625"
+ },
+ "rv_0106": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1965802415"
+ },
+ "rv_0107": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1977470977"
+ },
+ "rv_0108": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1965206637"
+ },
+ "rv_0109": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3195967491"
+ },
+ "rv_0110": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2004030197"
+ },
+ "rv_0111": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3180099181"
+ },
+ "rv_0112": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1628001384"
+ },
+ "rv_0113": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3094462156"
+ },
+ "rv_0114": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1600585153"
+ },
+ "rv_0115": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4362503700"
+ },
+ "rv_0116": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2149164248"
+ },
+ "rv_0117": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W7128163884"
+ },
+ "rv_0118": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4404570224"
+ },
+ "rv_0119": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2914080988"
+ },
+ "rv_0120": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3083657200"
+ },
+ "rv_0121": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1967748406"
+ },
+ "rv_0122": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2076675965"
+ },
+ "rv_0123": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4416056895"
+ },
+ "rv_0124": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3100013723"
+ },
+ "rv_0125": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2086312332"
+ },
+ "rv_0126": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4387995281"
+ },
+ "rv_0127": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3049093850"
+ },
+ "rv_0128": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4415816072"
+ },
+ "rv_0129": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2107148445"
+ },
+ "rv_0130": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W7172281386"
+ },
+ "rv_0131": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2154223333"
+ },
+ "rv_0132": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2136505188"
+ },
+ "rv_0133": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2029027704"
+ },
+ "rv_0134": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2088276314"
+ },
+ "rv_0135": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2055164650"
+ },
+ "rv_0136": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1970891853"
+ },
+ "rv_0137": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2069826625"
+ },
+ "rv_0138": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2994859228"
+ },
+ "rv_0139": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3104137195"
+ },
+ "rv_0140": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2599089347"
+ },
+ "rv_0141": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4388299033"
+ },
+ "rv_0142": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4380716100"
+ },
+ "rv_0143": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1969021261"
+ },
+ "rv_0144": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2885438112"
+ },
+ "rv_0145": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3102244598"
+ },
+ "rv_0146": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3091134735"
+ },
+ "rv_0147": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1994524338"
+ },
+ "rv_0148": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2001305853"
+ },
+ "rv_0149": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4390508629"
+ },
+ "rv_0150": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1982704723"
+ },
+ "rv_0151": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2078020684"
+ },
+ "rv_0152": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4362679308"
+ },
+ "rv_0153": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2981373895"
+ },
+ "rv_0154": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2073759562"
+ },
+ "rv_0155": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2010234130"
+ },
+ "rv_0156": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2052462717"
+ },
+ "rv_0157": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2089639791"
+ },
+ "rv_0158": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2067947251"
+ },
+ "rv_0159": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4404988024"
+ },
+ "rv_0160": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1774786173"
+ },
+ "rv_0161": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1988915799"
+ },
+ "rv_0162": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2130497725"
+ },
+ "rv_0163": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3106170500"
+ },
+ "rv_0164": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2216177139"
+ },
+ "rv_0165": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4321443800"
+ },
+ "rv_0166": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1998066003"
+ },
+ "rv_0167": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2103718749"
+ },
+ "rv_0168": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1992596797"
+ },
+ "rv_0169": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2991012228"
+ },
+ "rv_0170": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3160718422"
+ },
+ "rv_0171": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2021148443"
+ },
+ "rv_0172": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2064211249"
+ },
+ "rv_0173": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3001997307"
+ },
+ "rv_0174": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1990851208"
+ },
+ "rv_0175": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3049530289"
+ },
+ "rv_0176": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2049112245"
+ },
+ "rv_0177": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4379598528"
+ },
+ "rv_0178": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2076320282"
+ },
+ "rv_0179": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1533990050"
+ },
+ "rv_0180": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4400611830"
+ },
+ "rv_0181": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2288636176"
+ },
+ "rv_0182": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3185509677"
+ },
+ "rv_0183": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3097471517"
+ },
+ "rv_0184": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2997778636"
+ },
+ "rv_0185": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2160239150"
+ },
+ "rv_0186": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2593618218"
+ },
+ "rv_0187": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2768693113"
+ },
+ "rv_0188": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2003529465"
+ },
+ "rv_0189": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1982743727"
+ },
+ "rv_0190": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4381164121"
+ },
+ "rv_0191": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2082996519"
+ },
+ "rv_0192": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2896291372"
+ },
+ "rv_0193": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3103219753"
+ },
+ "rv_0194": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2038968899"
+ },
+ "rv_0195": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4411873290"
+ },
+ "rv_0196": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4411748371"
+ },
+ "rv_0197": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3123520414"
+ },
+ "rv_0198": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4413927727"
+ },
+ "rv_0199": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2143725667"
+ },
+ "rv_0200": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4390092607"
+ },
+ "rv_0201": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3208550656"
+ },
+ "rv_0202": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3099356555"
+ },
+ "rv_0203": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4411689843"
+ },
+ "rv_0204": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4281570648"
+ },
+ "rv_0205": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2078745355"
+ },
+ "rv_0206": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2063491765"
+ },
+ "rv_0207": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2481643267"
+ },
+ "rv_0208": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1992635911"
+ },
+ "rv_0209": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4283749550"
+ },
+ "rv_0210": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3046551000"
+ },
+ "rv_0211": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2143806667"
+ },
+ "rv_0212": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2909678589"
+ },
+ "rv_0213": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2074254987"
+ },
+ "rv_0214": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1981810686"
+ },
+ "rv_0215": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4387561133"
+ },
+ "rv_0216": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2145032154"
+ },
+ "rv_0217": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1972707259"
+ },
+ "rv_0218": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2171535929"
+ },
+ "rv_0219": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1968301039"
+ },
+ "rv_0220": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4387595772"
+ },
+ "rv_0221": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3206349492"
+ },
+ "rv_0222": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2117015256"
+ },
+ "rv_0223": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3209072799"
+ },
+ "rv_0224": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1630593375"
+ },
+ "rv_0225": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1990396527"
+ },
+ "rv_0226": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3109503688"
+ },
+ "rv_0227": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W7162149499"
+ },
+ "rv_0228": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2111614829"
+ },
+ "rv_0229": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2584587052"
+ },
+ "rv_0230": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2072814353"
+ },
+ "rv_0231": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2001092615"
+ },
+ "rv_0232": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W7214354808"
+ },
+ "rv_0233": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2017816590"
+ },
+ "rv_0234": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3199676326"
+ },
+ "rv_0235": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2929344423"
+ },
+ "rv_0236": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1574696133"
+ },
+ "rv_0237": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4225748951"
+ },
+ "rv_0238": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4286561157"
+ },
+ "rv_0239": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2967216037"
+ },
+ "rv_0240": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2031644050"
+ },
+ "rv_0241": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1976838760"
+ },
+ "rv_0242": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1993144189"
+ },
+ "rv_0243": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4414809848"
+ },
+ "rv_0244": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2517725418"
+ },
+ "rv_0245": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3047481417"
+ },
+ "rv_0246": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1989666934"
+ },
+ "rv_0247": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3052891656"
+ },
+ "rv_0248": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2018759612"
+ },
+ "rv_0249": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2055424931"
+ },
+ "rv_0250": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1832454445"
+ },
+ "rv_0251": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2080945979"
+ },
+ "rv_0252": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4317669243"
+ },
+ "rv_0253": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4377940181"
+ },
+ "rv_0254": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2040289655"
+ },
+ "rv_0255": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4310743398"
+ },
+ "rv_0256": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2015388703"
+ },
+ "rv_0257": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2743106984"
+ },
+ "rv_0258": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2064020613"
+ },
+ "rv_0259": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2129358112"
+ },
+ "rv_0260": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3004732371"
+ },
+ "rv_0261": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W3206685233"
+ },
+ "rv_0262": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2005638164"
+ },
+ "rv_0263": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3099254771"
+ },
+ "rv_0264": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3100227833"
+ },
+ "rv_0265": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1975937610"
+ },
+ "rv_0266": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2729012159"
+ },
+ "rv_0267": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2044860681"
+ },
+ "rv_0268": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W7164151126"
+ },
+ "rv_0269": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2889463798"
+ },
+ "rv_0270": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4254564983"
+ },
+ "rv_0271": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1994931640"
+ },
+ "rv_0272": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4406725432"
+ },
+ "rv_0273": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2017676665"
+ },
+ "rv_0274": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3012484102"
+ },
+ "rv_0275": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2000290791"
+ },
+ "rv_0276": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3093145685"
+ },
+ "rv_0277": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W3100709589"
+ },
+ "rv_0278": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2468150284"
+ },
+ "rv_0279": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2950439176"
+ },
+ "rv_0280": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1989635939"
+ },
+ "rv_0281": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4245761455"
+ },
+ "rv_0282": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W7162652094"
+ },
+ "rv_0283": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1986891982"
+ },
+ "rv_0284": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W2995540504"
+ },
+ "rv_0285": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W1966938238"
+ },
+ "rv_0286": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2553513847"
+ },
+ "rv_0287": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1992667211"
+ },
+ "rv_0288": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2766626807"
+ },
+ "rv_0289": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4394749980"
+ },
+ "rv_0290": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2007236448"
+ },
+ "rv_0291": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W1988514348"
+ },
+ "rv_0292": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W2996361072"
+ },
+ "rv_0293": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W4281251317"
+ },
+ "rv_0294": {
+  "stratum": "extension",
+  "work_id": "https://openalex.org/W4327672336"
+ },
+ "rv_0295": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W1984684673"
+ },
+ "rv_0296": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W4408505669"
+ },
+ "rv_0297": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2887118143"
+ },
+ "rv_0298": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W2316900830"
+ },
+ "rv_0299": {
+  "stratum": "classifier",
+  "work_id": "https://openalex.org/W3100918092"
+ },
+ "rv_0300": {
+  "stratum": "admitted",
+  "work_id": "https://openalex.org/W7168242807"
+ }
+}
