@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "scope_name": "topic-guided high-recall corpus of Swedish-affiliated quantum research",
+  "country_evidence": {
+    "primary": {
+      "filter_field": "authorships.countries",
+      "filter_value": "SE|NO|DK|IS|FI|EE|LV|LT",
+      "definition": "At least one authorship claims a Nordic or Baltic country (SE, NO, DK, IS, FI, EE, LV, LT) as a publication-time affiliation country."
+    },
+    "audit": {
+      "filter_field": "authorships.institutions.country_code",
+      "filter_value": "SE|NO|DK|IS|FI|EE|LV|LT",
+      "definition": "At least one matched authorship institution has a Nordic or Baltic country code (SE, NO, DK, IS, FI, EE, LV, LT)."
+    },
+    "include_international_collaborations": true,
+    "infer_nationality": false,
+    "use_current_author_institution": false
+  },
+  "year_windows": {
+    "pilot": {
+      "start": 2015,
+      "end": 2025,
+      "status": "complete",
+      "purpose": "Archived query-count and sampling probe; do not rerun for the production range."
+    },
+    "production": {
+      "start": 1950,
+      "end": 2026,
+      "status": "historical-plus-provisional",
+      "purpose": "Topic- and derived-keyword-guided Swedish quantum-paper corpus window."
+    },
+    "provisional": {
+      "start": 2026,
+      "end": 2026,
+      "status": "live"
+    }
+  },
+  "publication_views": {
+    "headline": {
+      "work_types": [
+        "article",
+        "review"
+      ],
+      "note": "OpenAlex records both journal and conference-proceedings papers as article; distinguish them with primary_location.source.type when reporting."
+    },
+    "optional": {
+      "work_types": [
+        "preprint",
+        "dissertation",
+        "book-chapter"
+      ]
+    },
+    "preserve_all_retrieved_types": true
+  },
+  "retractions": {
+    "exclude_from_headline": true,
+    "retain_with_flag": true
+  },
+  "languages": [
+    "en",
+    "sv"
+  ],
+  "labels": [
+    "included_quantum",
+    "excluded_candidate"
+  ],
+  "inclusion_policy": {
+    "definition": "Quantum physics, a quantum phenomenon, a quantum system, or a quantum technology is central to the paper rather than merely mentioned.",
+    "accept_explicit_quantum_topic": true,
+    "accept_intrinsically_quantum_topic": true,
+    "accept_derived_quantum_keyword": true,
+    "broad_related_topic_requires_paper_term": true,
+    "manual_review_required": false,
+    "trained_classifier_required": false
+  },
+  "probe_sampling": {
+    "seed": 20260816,
+    "default_topic_primary": 5,
+    "default_topic_secondary": 5,
+    "ambiguous_topic_primary": 20,
+    "ambiguous_topic_secondary": 20,
+    "text_query": 10,
+    "ambiguous_when": [
+      "candidate matched only through a topic taxonomy keyword",
+      "candidate belongs to a conditional taxonomy domain"
+    ]
+  }
+}

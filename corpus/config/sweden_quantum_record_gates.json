@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "accepted_languages": [
+    "en"
+  ],
+  "accept_missing_language": true,
+  "excluded_work_types": [
+    "dataset",
+    "editorial",
+    "erratum",
+    "grant",
+    "other",
+    "paratext",
+    "peer-review",
+    "reference-entry",
+    "retraction",
+    "supplementary-materials"
+  ]
+}

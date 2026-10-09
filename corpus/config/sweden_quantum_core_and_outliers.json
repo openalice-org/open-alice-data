@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "core_rule": {
+    "name": "explicit_primary_topic_and_own_text",
+    "require_explicit_quantum_primary_topic": true,
+    "minimum_primary_topic_score": 0.5,
+    "excluded_work_types": [
+      "dataset",
+      "editorial",
+      "erratum",
+      "grant",
+      "other",
+      "paratext",
+      "peer-review",
+      "reference-entry",
+      "retraction",
+      "supplementary-materials"
+    ],
+    "core_term_fields": [
+      "title",
+      "abstract"
+    ],
+    "core_term_patterns": [
+      "\\bquant(?:um|a)\\b",
+      "\\bkvant\\w*\\b",
+      "\\bqubits?\\b",
+      "\\bkubits?\\b",
+      "\\bentangl(?:e|ed|ement|ing)\\b",
+      "\\bdecoher\\w*\\b",
+      "\\bsuperposition\\b",
+      "\\bschr[oö]dinger\\b",
+      "\\bhilbert space\\b"
+    ],
+    "ambiguous_term_patterns": [
+      "\\b(?:external|internal|absolute|incident|photon)?\\s*quantum efficienc\\w*\\b",
+      "\\bquantum yield\\w*\\b"
+    ]
+  },
+  "text_view": {
+    "backend": "embeddings",
+    "fields": [
+      "title",
+      "abstract",
+      "keywords"
+    ],
+    "minimum_text_tokens": 12,
+    "text_evidence_floor_tokens": 4,
+    "min_df": 5,
+    "max_df": 0.4,
+    "max_features": 300000,
+    "ngram_max": 2,
+    "sublinear_tf": true,
+    "svd_components": 128,
+    "cluster_label_min_df": 10,
+    "cluster_label_max_features": 60000,
+    "mask_core_terms": true
+  },
+  "topic_view": {
+    "mask_explicit_quantum_topics": true
+  },
+  "core_centers": {
+    "method": "spherical_kmeans",
+    "n_centers": 16,
+    "center_count_grid": [
+      8,
+      12,
+      16,
+      20,
+      24,
+      32
+    ],
+    "minimum_center_works": 25,
+    "silhouette_sample": 5000,
+    "top_terms": 12,
+    "example_titles": 3,
+    "random_state": 20260817
+  },
+  "outlier_model": {
+    "k_neighbors": 10,
+    "borderline_percentile": 95,
+    "far_percentile": 99,
+    "lof_neighbors": 20,
+    "far_cluster_count": 12,
+    "far_cluster_top_terms": 12,
+    "neighbor_examples": 3,
+    "random_state": 20260817
+  }
+}

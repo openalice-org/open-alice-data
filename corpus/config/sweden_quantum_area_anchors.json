@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "encoder": {
+    "model": "BAAI/bge-large-en-v1.5"
+  },
+  "softmax_temperature": 0.0365,
+  "areas": [
+    {
+      "name": "Quantum Computing",
+      "short_name": "QC",
+      "anchors": [
+        "Quantum computing: building and operating qubit processors that run quantum algorithms, including superconducting circuits, trapped ions, spin qubits and photonic processors.",
+        "Design, control and readout of qubits; two-qubit gates, gate fidelity, decoherence and coherence times, quantum error correction and fault-tolerant logical qubits.",
+        "Quantum algorithms and their simulation: variational algorithms, quantum simulation of many-body systems, quantum advantage and supremacy demonstrations, compilation and benchmarking of quantum circuits.",
+        "Terminology: qubit, transmon, quantum gate, quantum circuit, quantum processor, surface code, NISQ device, quantum annealing, quantum volume."
+      ]
+    },
+    {
+      "name": "Quantum Communication",
+      "short_name": "QComm",
+      "anchors": [
+        "Quantum communication and cryptography: distributing quantum states over optical fibre, free space and satellite links to transmit information securely.",
+        "Quantum key distribution protocols, entanglement distribution, quantum repeaters and quantum memories, teleportation, and the quantum internet.",
+        "Security of quantum cryptographic protocols, device-independent and measurement-device-independent schemes, secret key rates, single-photon sources and detectors for quantum links.",
+        "Terminology: QKD, BB84, entanglement swapping, Bell inequality violation, quantum channel capacity, quantum network node, decoy states."
+      ]
+    },
+    {
+      "name": "Quantum Sensing and Metrology",
+      "short_name": "QSense",
+      "anchors": [
+        "Quantum sensing and metrology: exploiting quantum coherence, entanglement and squeezing to measure physical quantities more precisely than classical limits allow.",
+        "Precision measurement of magnetic and electric fields, time, frequency, gravity and rotation using atomic clocks, atom interferometers, NV centres in diamond, SQUIDs and optomechanical resonators.",
+        "Quantum-enhanced measurement theory and practice: the standard quantum limit, Heisenberg limit, quantum Fisher information, squeezed light injection, noise and back-action in quantum-limited detection.",
+        "Terminology: magnetometry, atomic clock, atom interferometer, NV centre, SQUID, squeezed state, quantum limit, sensitivity, calibration standard."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "filter_name": "topic_guided_quantum_inclusion",
+  "definition": "Quantum physics, a quantum phenomenon, a quantum system, or a quantum technology is central to the paper rather than merely mentioned.",
+  "automatic_acceptance": {
+    "explicit_quantum": true,
+    "intrinsically_quantum": true,
+    "derived_quantum_keyword": true
+  },
+  "paper_term_required_for": [
+    "broad_related"
+  ],
+  "conditional_acceptance": {
+    "derived_quantum_keyword_title_confirmed": {
+      "required_field": "title",
+      "required_evidence": "paper_level_quantum_term",
+      "reject_container_titles": true
+    }
+  },
+  "derived_keyword_only_domain_safeguard": {
+    "domains": [
+      "Social Sciences"
+    ],
+    "minimum_quantum_keyword_count_for_exception": 2,
+    "strong_title_abstract_patterns_for_exception": [
+      "\\bquantum electro[- ]?dynam\\w*\\b",
+      "\\bqed\\b",
+      "\\bquantum field theor\\w*\\b",
+      "\\bquantum chromodynamics\\b",
+      "\\bqcd\\b",
+      "\\bqubits?\\b",
+      "\\bdecoher\\w*\\b",
+      "\\bbell(?:'?s)? (?:inequalit|theorem)\\w*\\b",
+      "\\bdensity matrices?\\b",
+      "\\bfock states?\\b",
+      "\\bsingle[- ]photon\\w*\\b",
+      "\\bphoton pairs?\\b",
+      "\\bspin qubits?\\b",
+      "\\bjosephson (?:(?:tunnel )?junctions?|effects?)\\b"
+    ]
+  },
+  "container_title_patterns": [
+    "^(?:technical program|journal of selected topics|focus issue introduction|proceedings\\b|front matter|table of contents|editorial:|preface\\b)",
+    "\\[(?:lecture notes|conference program)\\]$"
+  ],
+  "paper_level_term_patterns": [
+    "\\bquant(?:um|a)\\b",
+    "\\bquanti[sz]\\w*\\b",
+    "\\bkvant\\w*\\b",
+    "\\bqubits?\\b",
+    "\\bkubits?\\b",
+    "\\bentangl\\w*\\b",
+    "\\bdecoher\\w*\\b",
+    "\\bsuperposition\\w*\\b",
+    "\\bwave[ -]?functions?\\b",
+    "\\bschr[oö]dinger\\b",
+    "\\bheisenberg uncertainty\\b",
+    "\\bbell(?:'?s)? (?:inequalit|theorem)\\w*\\b",
+    "\\bquantum chromodynamics\\b",
+    "\\bqcd\\b",
+    "\\bquantum field theor\\w*\\b",
+    "\\bdensity matrices?\\b",
+    "\\bhilbert spaces?\\b",
+    "\\bbose[- ]einstein condens(?:ate|ates|ation)\\b",
+    "\\bfock states?\\b",
+    "\\bsingle[- ]photon\\w*\\b",
+    "\\bphoton pairs?\\b",
+    "\\bspin qubits?\\b",
+    "\\bjosephson (?:(?:tunnel )?junctions?|effects?)\\b",
+    "\\bquantum electro[- ]?dynam\\w*\\b"
+  ],
+  "paper_level_only_term_patterns": [
+    "\\batomic clocks?\\b"
+  ],
+  "paper_fields": [
+    "title",
+    "abstract",
+    "keywords"
+  ],
+  "notes": [
+    "Explicit-quantum, intrinsically-quantum, and high-confidence derived paper-keyword routes are accepted automatically.",
+    "The lower-confidence derived-keyword tier is retrieval-only unless the paper title independently matches a quantum pattern and is not a container title.",
+    "Derived keyword IDs come from the configured frequency, cross-topic, specificity, and quantum-pattern gates; they are not a hand-written search list.",
+    "A derived-keyword-only work whose primary OpenAlex topic is in a safeguarded domain is accepted only with a strong title/abstract quantum signal and at least two independently quantum-matching OpenAlex paper keywords.",
+    "Broad-related routes include taxonomy-keyword-only and conditional-domain topic matches.",
+    "A taxonomy keyword describes a topic cluster and is not assumed to describe every paper assigned to that topic.",
+    "The filter is a deterministic retrieval rule, not a trained classifier.",
+    "No expert review is required."
+  ]
+}

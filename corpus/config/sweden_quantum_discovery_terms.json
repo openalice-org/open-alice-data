@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "term_groups": {
+    "direct": [
+      "quantum"
+    ],
+    "related": [
+      "qubit",
+      "qubits",
+      "entanglement",
+      "entangled",
+      "decoherence",
+      "bell inequality",
+      "bell inequalities",
+      "single photon",
+      "single photons",
+      "squeezed light",
+      "squeezed state",
+      "squeezed states",
+      "trapped ion",
+      "trapped ions",
+      "rydberg",
+      "bose einstein condensate",
+      "bose einstein condensation",
+      "josephson junction",
+      "josephson junctions",
+      "nitrogen vacancy",
+      "nv center",
+      "nv centre",
+      "atom interferometry",
+      "atom interferometer"
+    ]
+  },
+  "taxonomy_policy": {
+    "eligible_domains": [
+      "Physical Sciences"
+    ],
+    "conditional_domains": [
+      "Health Sciences",
+      "Life Sciences"
+    ],
+    "blocked_domains": [
+      "Social Sciences"
+    ]
+  }
+}

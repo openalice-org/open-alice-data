@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "method": "derive supplemental OpenAlex keyword routes from explicit-quantum topic works",
+  "seed_topic_group": "explicit_quantum",
+  "source_field": "keywords",
+  "selection_tiers": {
+    "high_confidence": {
+      "minimum_explicit_seed_works": 20,
+      "minimum_explicit_topics": 2,
+      "minimum_explicit_share_of_topic_universe": 0.8,
+      "require_quantum_pattern_match_in_display_name": true,
+      "require_quantum_pattern_match_in_identifier": true,
+      "inclusion_rule": "automatic"
+    },
+    "title_confirmed": {
+      "minimum_explicit_seed_works": 10,
+      "minimum_explicit_topics": 2,
+      "minimum_explicit_share_of_topic_universe": 0.7,
+      "require_quantum_pattern_match_in_display_name": true,
+      "require_quantum_pattern_match_in_identifier": true,
+      "inclusion_rule": "title_quantum_pattern_required"
+    }
+  },
+  "keyword_ids_per_route": 100,
+  "selection_notes": [
+    "Counts use unique Swedish-affiliated works from the verified 1950-2026 topic routes.",
+    "The topic universe is the deduplicated set reached by all non-blocked topic routes.",
+    "Explicit share is the fraction of topic-universe works carrying a keyword that were also reached by at least one explicit_quantum topic.",
+    "High-confidence keywords pass the 20-work, 2-topic, and 80% explicit-share thresholds and are accepted automatically outside the configured domain safeguard.",
+    "The title-confirmed tier passes the lower 10-work, 2-topic, and 70% explicit-share thresholds, but a retrieved work is included through this route only when its own title independently matches a quantum pattern.",
+    "Both the keyword display name and normalized keyword ID must independently match a quantum-specific paper pattern from sweden_quantum_paper_filter.json in either tier.",
+    "No manually enumerated keyword or text-query allowlist is used."
+  ]
+}
