@@ -421,7 +421,7 @@ def main():
     data["meta"]["generated_utc"] = datetime.now(timezone.utc).isoformat()
     data["meta"]["specter"] = {
         "model": model_name,
-        "anchors_config": str(ANCHORS_CONFIG_PATH),
+        "anchors_config": ANCHORS_CONFIG_PATH.relative_to(SPRINT11.parent).as_posix(),
         "anchors_config_tau": anchor_tau,
         "device": device,
         "tau": tau,
