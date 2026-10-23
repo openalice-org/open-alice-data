@@ -4,7 +4,7 @@ requests==2.34.2
 python-dotenv==1.2.4
 # torch: install the CPU build first (see `make setup`); the default index pulls the multi-GB CUDA stack
 torch==2.14.1
-transformers==5.19.0
+transformers==5.10.1
 tqdm==4.70.1
 # dedup/ only (own venv, `make setup-dedup`):
 # splink<5  (the dedup scripts use the 4.x Linker(db_api=...) API)
