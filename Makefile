@@ -173,6 +173,11 @@ domains:
 paper-counts:
 	$(P) $(PY) build_paper_counts.py --works data/all_universities_works.jsonl --out data/paper_counts_geo.json
 
+# Per-person paper lists (year, citations, DOI, triangle position) for the app's 3D paper explorer.
+# Must run against the SAME build that produced people_viz.json, or paper sets will not match the person records.
+person-papers:
+	$(P) $(PY) build_person_papers.py --people data/people_viz.json --out data/person_papers
+
 shares:
 	$(P) $(PY) build_domain_shares.py --in data/people_viz.json --out data/people_viz.json
 
