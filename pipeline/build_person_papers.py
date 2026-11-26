@@ -15,9 +15,12 @@ meta so the paper positions stay consistent with the published person shares.
 Output: one JSON shard per (OpenAlex author number mod N_SHARDS), so the
 frontend fetches ~0.5 MB when a person is opened rather than the whole set.
 
-  shard file:  {"<person id>": [[wid, year, cites, n_authors, s, cm, cp, title, doi], ...]}
+  shard file:  {"<person id>": [[wid, year, cites, n_authors, s, cm, cp, title, doi, ux, uy], ...]}
   wid   = OpenAlex work number (W123 -> 123)
   s/cm/cp = sensing / communication / computing share, integer per-mille (sum ~1000)
+  ux/uy = position on the global UMAP of work embeddings (build_work_umap.py), integer 0..1000
+          after clipping the 0.5th/99.5th percentile of all fitted works; -1 when a work has
+          no UMAP position
 
 Run (from this directory, after build_domain_specter.py):
   ../.venv/bin/python3 build_person_papers.py --people PATH/people_viz.json --out DIR
@@ -47,6 +50,19 @@ HERE = Path(__file__).resolve().parent
 TAXONOMY = HERE / "data" / "people_taxonomy.json"
 WORK_LABELS = HERE / "data" / "work_domain_labels.json"
 N_SHARDS = 64  # keep in sync with src/lib/personPapers.ts
+UMAP_NPZ = HERE / "caches" / "work_umap.npz"  # from build_work_umap.py
+
+
+def load_umap_scaled() -> dict:
+    """wid -> (ux, uy) as ints 0..1000. Bounds come from ALL fitted works, not just tracked ones."""
+    if not UMAP_NPZ.exists():
+        raise SystemExit(f"{UMAP_NPZ} not found: run build_work_umap.py first")
+    z = np.load(UMAP_NPZ)
+    xy = z["xy"].astype(np.float64)
+    lo = np.percentile(xy, 0.5, axis=0)
+    hi = np.percentile(xy, 99.5, axis=0)
+    scaled = np.rint(np.clip((xy - lo) / (hi - lo), 0, 1) * 1000).astype(int)
+    return {w: (int(a), int(b)) for w, (a, b) in zip(z["ids"].tolist(), scaled)}
 
 
 def shard_of(person_id: str) -> int:
@@ -149,10 +165,16 @@ def main() -> int:
     tri = tri / tri.sum(axis=1, keepdims=True)
     permille = np.rint(tri * 1000).astype(int)
 
+    umap_xy = load_umap_scaled()
+    no_umap = sum(w not in umap_xy for w in wids)
+    if no_umap:
+        print(f"WARNING: {no_umap} works have no UMAP position (written as -1)")
+
     shards = defaultdict(lambda: defaultdict(list))
     for i, w in enumerate(wids):
         year, cites, n_auth, title, doi = meta[w]
-        row = [num(w), year, cites, n_auth, int(permille[i, 0]), int(permille[i, 1]), int(permille[i, 2]), title, doi]
+        ux, uy = umap_xy.get(w, (-1, -1))
+        row = [num(w), year, cites, n_auth, int(permille[i, 0]), int(permille[i, 1]), int(permille[i, 2]), title, doi, ux, uy]
         for pid in work_people[w]:
             shards[shard_of(pid)][pid].append(row)
 

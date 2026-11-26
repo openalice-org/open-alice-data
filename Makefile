@@ -15,7 +15,7 @@ P            = cd pipeline &&
 EPO_FLAGS    = $(if $(filter full,$(PATENTS)),,$(if $(filter cache,$(PATENTS)),--skip-fetch,--skip-patents))
 
 .PHONY: help setup setup-openvino setup-dedup dedup rescue rescue-pool rescue-embed rescue-sample rescue-label rescue-train rescue-band rescue-apply \
-        corpus split authors patents people merge concat taxonomy embed embed-npu domains \
+        corpus split authors patents people merge concat taxonomy embed embed-npu work-umap domains \
         paper-counts shares hindex patch-patents links collab stage publish all
 help:
 	@echo "Setup (uv)"
@@ -173,9 +173,14 @@ domains:
 paper-counts:
 	$(P) $(PY) build_paper_counts.py --works data/all_universities_works.jsonl --out data/paper_counts_geo.json
 
-# Per-person paper lists (year, citations, DOI, triangle position) for the app's 3D paper explorer.
+# One global 2-D UMAP over every accepted work's cached bge embedding (no new embedding is computed;
+# CPU only, seeded). Positions go into the person-papers shards as the explorer's UMAP view.
+work-umap:
+	$(P) $(CAPPED) $(PY) -u build_work_umap.py
+
+# Per-person paper lists (year, citations, DOI, triangle and UMAP position) for the app's 3D paper explorer.
 # Must run against the SAME build that produced people_viz.json, or paper sets will not match the person records.
-person-papers:
+person-papers: work-umap
 	$(P) $(PY) build_person_papers.py --people data/people_viz.json --out data/person_papers
 
 shares:
