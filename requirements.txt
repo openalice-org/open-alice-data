@@ -6,6 +6,7 @@ python-dotenv==1.2.4
 torch==2.14.1
 transformers==5.19.0
 tqdm==4.70.1
+umap-learn==0.6.0  # work-umap (person explorer UMAP view)
 # dedup/ only (own venv, `make setup-dedup`):
 # splink<5  (the dedup scripts use the 4.x Linker(db_api=...) API)
 # pandas
