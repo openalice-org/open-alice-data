@@ -254,13 +254,15 @@ collab:
 stage:   # collect the 5 JSONs the app loads into STAGE_DIR (does not touch the app), applying the GDPR opt-outs
 	mkdir -p $(STAGE_DIR)
 	$(P) $(PY) apply_optouts.py --out $(abspath $(STAGE_DIR))
-	@echo "Staged 5 JSON files in $(abspath $(STAGE_DIR)). Copy them to the app's public/data, or run: make publish"
+	@echo "Staged the app's JSON files (and person_papers/ when present) in $(abspath $(STAGE_DIR)). Copy them to the app's public/data, or run: make publish"
 
 publish:   # explicit: STAGE_DIR -> APP_PUBLIC (default is a sibling checkout ../open-alice/public/data)
 	@test -d $(STAGE_DIR) || { echo "STAGE_DIR=$(STAGE_DIR) does not exist: run 'make stage' (or 'make all') first"; exit 1; }
 	mkdir -p $(APP_PUBLIC)
 	cd $(STAGE_DIR) && cp people_viz.json people_taxonomy.json paper_counts_geo.json patent_links.json collaborations.json $(APP_PUBLIC)/
+	@if [ -d $(STAGE_DIR)/person_papers ]; then mkdir -p $(APP_PUBLIC)/person_papers && cp $(STAGE_DIR)/person_papers/*.json $(APP_PUBLIC)/person_papers/; fi
 
 # dedup rewrites people_viz.json (fuses split author records), then re-runs every id-keyed step, so links/collab come after it.
+# person-papers comes after dedup because the shards must match the FINAL people_viz.json.
 # `all` never touches the app: it ends with `stage`; run `make publish` explicitly.
-all: people merge taxonomy domains paper-counts shares hindex patch-patents dedup stage
+all: people merge taxonomy domains paper-counts shares hindex patch-patents dedup person-papers stage
