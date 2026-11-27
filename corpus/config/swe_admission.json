@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "note": "Admission policy of the SweMetrics enrichment (pipeline/swepool_apply.py). A work is admitted when the classifier score reaches `classifier_min_p`, or, for the uncertain middle, when Eikos-4B calls it CORE with P(CORE) >= `eikos_min_p`. `null` means the threshold the classifier was trained with (swe_train_manifest.json). Set from the blind validation in docs/validation/swe (METHODOLOGY 3.2b): the Swepub routes are 88 % CORE at the trained thresholds; the OpenAlex text-net routes are only 48 % CORE at classifier P 0.71-0.85 and 27-56 % at Eikos P 0.5-0.7, so they need stricter ones.",
+  "openalex": {"classifier_min_p": 0.85, "eikos_min_p": 0.70},
+  "swepub":   {"classifier_min_p": null, "eikos_min_p": 0.50}
+}

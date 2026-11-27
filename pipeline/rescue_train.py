@@ -111,18 +111,23 @@ def main():
                     help="max band works sent to Eikos, closest to 0.5 first. By the model's calibrated "
                          "estimates the first 4,000, 6,000 and 8,000 hold 63, 78 and 87 percent of the band's "
                          "core works; 6,000 (about 60 min of iGPU time) is the default trade-off")
+    ap.add_argument("--prefix", default="rescue",
+                    help="file-name prefix of the pool being gated (default: the rescue pool). A second pool, e.g. "
+                         "--prefix swe, reads swe_pool.jsonl, swe_pool_bge.npy, swe_label_sample*.json... and writes "
+                         "swe_scores.npz, swe_band.jsonl, swe_train_manifest.json")
     args = ap.parse_args()
+    pre = args.prefix
 
-    pool = load_pool(DATA / "rescue_pool.jsonl")
-    emb = np.load(DATA / "rescue_pool_bge.npy").astype(np.float32)
-    ids = json.load(open(DATA / "rescue_pool_bge_ids.json"))
+    pool = load_pool(DATA / f"{pre}_pool.jsonl")
+    emb = np.load(DATA / f"{pre}_pool_bge.npy").astype(np.float32)
+    ids = json.load(open(DATA / f"{pre}_pool_bge_ids.json"))
     emb /= np.linalg.norm(emb, axis=1, keepdims=True)
     row = {w: i for i, w in enumerate(ids)}
     missing = [w for w in pool if w not in row]
     assert not missing, f"{len(missing)} pool works have no embedding; finish stage R2 first"
 
-    sample = [json.loads(l) for l in open(DATA / "rescue_label_sample.jsonl", encoding="utf-8")]
-    labels = {x["item"]: x for x in json.load(open(DATA / "rescue_label_sample_eikos.json"))}
+    sample = [json.loads(l) for l in open(DATA / f"{pre}_label_sample.jsonl", encoding="utf-8")]
+    labels = {x["item"]: x for x in json.load(open(DATA / f"{pre}_label_sample_eikos.json"))}
     sample = [s for s in sample if s["item"] in labels]
     X = emb[[row[s["id"]] for s in sample]]
     y = np.array([labels[s["item"]]["label"] == "CORE" for s in sample])
@@ -158,8 +163,8 @@ def main():
     if note:
         print("NOTE:", note)
 
-    np.savez(DATA / "rescue_scores.npz", ids=np.array(pool_ids), p_core=p_pool.astype(np.float32))
-    with open(DATA / "rescue_band.jsonl", "w", encoding="utf-8") as f:
+    np.savez(DATA / f"{pre}_scores.npz", ids=np.array(pool_ids), p_core=p_pool.astype(np.float32))
+    with open(DATA / f"{pre}_band.jsonl", "w", encoding="utf-8") as f:
         for k, i in enumerate(band, 1):
             wk = pool[i]
             f.write(json.dumps({"item": f"rb_{k:05d}", "id": i, "year": wk["publication_year"],
@@ -179,7 +184,7 @@ def main():
         "pool": {"size": len(pool_ids), "accepted_by_classifier": n_accept, "band": len(in_band),
                  "band_sent_to_eikos": len(band), "dropped": len(pool_ids) - n_accept - len(in_band)},
     }
-    (DATA / "rescue_train_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    (DATA / f"{pre}_train_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

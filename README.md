@@ -86,6 +86,9 @@ make all
 | `setup-openvino` | Create `.venv-openvino` (OpenVINO, transformers 4.57.6). |
 | `corpus` | Build and classify the corpus from OpenAlex (steps 01-05). |
 | `rescue` | Whole rescue pass: `rescue-pool`, `rescue-embed`, `rescue-sample`, `rescue-label`, `rescue-train`, `rescue-band`, `rescue-apply`. |
+| `swe-plan` | What the SweMetrics enrichment still has to do at each stage, with time estimates. Runs nothing. |
+| `swe-update` | The weekly command: runs only the pending stages (harvest when SweMetrics has a new snapshot, embedding and labelling only for new works). Needs `SWEMETRICS_API_KEY` in `.env` and, for the gate, the OpenVINO environment. See METHODOLOGY 3.2b. |
+| `swe` | The whole SweMetrics enrichment from scratch (harvest, pool, embed, sample, label, train, band, apply). |
 | `split` | Write one corpus file per institution (`RESCUE=0` forces the rule-only corpus). |
 | `authors`, `patents`, `people` | Per-institution author extraction, patents, people data. |
 | `merge`, `concat` | Merge institutions into `people_viz.json`; concatenate works. |
@@ -129,6 +132,14 @@ models/            Local model files, e.g. models/eikos (git-ignored)
 | `pipeline/caches/work_embeddings_bge.npy` + `work_embedding_ids_bge.json` | about 400 MB | `make embed` or `make embed-npu` | `make domains` re-embeds every work: hours on CPU. |
 | `pipeline/data/<institution>/caches/` (EPO search, biblio, text) | about 330 MB | `PATENTS=full` (slow, needs EPO credentials) | Use `PATENTS=skip`, or a slow `PATENTS=full`. |
 | `pipeline/caches/openalex_global_h_index.jsonl` | small | `make hindex` | Refetched from OpenAlex when missing. |
+
+## Opt-outs (GDPR)
+
+`make stage` (and so `make all`) removes opted-out people from what is exported, keeping their papers in every aggregate
+and their name as a co-author of papers: see METHODOLOGY 3.8. Put the opt-outs in `private/optout.jsonl` (git-ignored, never
+commit it; the format is in `docs/optout.example.jsonl`) or point `OPTOUT_FILE` at it. A missing registry only warns;
+set `OPTOUT_REQUIRED=1` to make it an error. If the per-person paper shards exist in `pipeline/data/person_papers`,
+filtered copies are staged under `STAGE_DIR/person_papers`.
 
 ## Known gaps
 

@@ -15,6 +15,11 @@ positives. Two strata are therefore drawn, and kept apart in the output:
 
 Output: corpus/data/rescue_label_sample.jsonl  ({item, id, year, title, abstract, stratum}).
 
+The sample is FROZEN once drawn: if the output file already exists it is kept and nothing is redrawn
+(`--redraw` forces a new draw). A redraw over a changed pool would select mostly different works and
+force them all to be labelled again; keeping the sample means its labels (see label_store.py) stay in
+use run after run while the pool grows. The classifier still scores every pool work every time.
+
 Usage:  python rescue_sample.py
 """
 
@@ -50,7 +55,13 @@ def main():
     ap.add_argument("--out", type=Path, default=DATA / "rescue_label_sample.jsonl")
     ap.add_argument("--uniform", type=int, default=N_UNIFORM)
     ap.add_argument("--targeted", type=int, default=N_TARGETED)
+    ap.add_argument("--redraw", action="store_true", help="draw a new sample even if the output file exists")
     args = ap.parse_args()
+
+    if args.out.exists() and not args.redraw:
+        kept = sum(1 for _ in open(args.out, encoding="utf-8"))
+        print(f"keeping the existing sample {args.out} ({kept} items, frozen); use --redraw to draw a new one")
+        return
 
     pool = [json.loads(line) for line in open(args.pool, encoding="utf-8")]
     rnd = random.Random(SEED)

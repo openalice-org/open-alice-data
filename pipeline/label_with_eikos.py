@@ -9,10 +9,15 @@ it for paper triage is out of its home domain; docs/METHODOLOGY.md reports how w
 with the Haiku and Sonnet labels on the same papers (about 81 % with Haiku, kappa 0.71).
 
 Runs through OpenVINO on the Intel iGPU (`GPU`): measured ~0.6 s per paper, ~3.5 GB, far better
-than the NPU, which handles single-pass encoders well but not LLM prefill. Resumable: finished
-items are skipped when the output file already exists.
+than the NPU, which handles single-pass encoders well but not LLM prefill.
 
-Input  JSONL: one object per line with at least {item, title, abstract}; optional {year}.
+Nothing is labelled twice. Labels live in a persistent store (label_store.py, keyed by work id, a hash of
+the text and the model + rubric): an item whose `id` is already in the store is answered from it, the model is
+not even loaded when every item is, and each new label is appended to the store the moment it exists.
+Resumable as before: finished items are skipped when the output file already exists.
+
+Input  JSONL: one object per line with at least {item, title, abstract}; optional {year}, and {id}
+       (the work id: needed for the store to recognise a paper across runs).
 Output JSON : [{item, label, probs, tokens}], probs ordered as rescue_rubric.LABELS.
 
 Needs an environment with openvino + transformers (`make setup-openvino`) and the exported model:
@@ -31,6 +36,7 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
+from label_store import DEFAULT_STORE, LabelStore, labeller_key, text_hash  # noqa: E402
 from rescue_rubric import LABELS, QUESTION  # noqa: E402
 
 DEFAULT_EIKOS_DIR = os.environ.get("EIKOS_DIR") or None
@@ -44,7 +50,34 @@ def main():
     ap.add_argument("--eikos-dir", type=Path, default=DEFAULT_EIKOS_DIR,
                     help="(default: env EIKOS_DIR) folder holding Eikos-4B/ (tokenizer, decision_core.py) and the exported model")
     ap.add_argument("--model", default="eikos-4b-int4-ov", help="exported OpenVINO model folder name")
+    ap.add_argument("--store", type=Path, default=DEFAULT_STORE,
+                    help="persistent label store shared by every run (default: corpus/data/label_store.jsonl)")
+    ap.add_argument("--no-store", action="store_true", help="ignore the store (label everything again)")
     args = ap.parse_args()
+    items = [json.loads(line) for line in open(args.inp, encoding="utf-8")]
+    store = None if args.no_store else LabelStore(args.store)
+    key = labeller_key(args.model, QUESTION)
+    res = json.load(open(args.out)) if args.out.exists() else []
+    done = {x["item"] for x in res}
+    n_done_before = len(done)
+    reused, pending = 0, []
+    for it in items:
+        if it["item"] in done:
+            continue
+        hit = store.get(it["id"], text_hash(it["title"], it["abstract"]), key) if store and it.get("id") else None
+        if hit:
+            res.append({"item": it["item"], "label": hit["label"], "probs": hit["probs"], "tokens": hit.get("tokens")})
+            done.add(it["item"])
+            reused += 1
+        else:
+            pending.append(it)
+    print(f"{len(items)} items: {n_done_before} already in the output, {reused} answered from the label store, "
+          f"{len(pending)} to label with the model", flush=True)
+    if not pending:
+        json.dump(res, open(args.out, "w"))
+        print(f"DONE {len(res)} items -> {args.out} (no model needed)")
+        return
+
     if not args.eikos_dir:
         sys.exit("Eikos model folder not set: pass --eikos-dir or set the EIKOS_DIR environment variable "
                  "(e.g. in .env). Create the model with scripts/export_eikos_openvino.py.")
@@ -58,7 +91,6 @@ def main():
     from decision_core import messages, options_of
     from transformers import AutoTokenizer
 
-    items = [json.loads(line) for line in open(args.inp, encoding="utf-8")]
     tok = AutoTokenizer.from_pretrained(str(args.eikos_dir / "Eikos-4B"))
     mdir = args.eikos_dir / args.model
     core = ov.Core()
@@ -72,12 +104,8 @@ def main():
     assert tuple(o[0] for o in opts) == LABELS, "option order must match rescue_rubric.LABELS"
     letter_ids = [tok(LETTERS[i], add_special_tokens=False)["input_ids"][0] for i in range(len(opts))]
 
-    res = json.load(open(args.out)) if args.out.exists() else []
-    done = {x["item"] for x in res}
     t0 = time.perf_counter()
-    for k, it in enumerate(items):
-        if it["item"] in done:
-            continue
+    for k, it in enumerate(pending):
         state = {"year": it.get("year"), "title": it["title"], "abstract": it["abstract"]}
         text = tok.apply_chat_template(messages(state, QUESTION, opts), tokenize=False,
                                        add_generation_prompt=True, enable_thinking=False)
@@ -92,13 +120,17 @@ def main():
         sel = np.array([logits[i] for i in letter_ids], np.float64)
         p = np.exp(sel - sel.max())
         p /= p.sum()
-        res.append({"item": it["item"], "label": LABELS[int(p.argmax())],
-                    "probs": [round(float(x), 4) for x in p], "tokens": n})
+        row = {"item": it["item"], "label": LABELS[int(p.argmax())],
+               "probs": [round(float(x), 4) for x in p], "tokens": n}
+        res.append(row)
+        if store and it.get("id"):  # written the moment it exists: an interrupted run loses nothing
+            store.add({"id": it["id"], "text_hash": text_hash(it["title"], it["abstract"]), "labeller": key,
+                       "label": row["label"], "probs": row["probs"], "tokens": n})
         if (k + 1) % 50 == 0:
             tmp = args.out.with_suffix(".tmp")
             json.dump(res, open(tmp, "w"))
             os.replace(tmp, args.out)
-            print(f"{k + 1}/{len(items)}  {(time.perf_counter() - t0) / max(1, len(res) - len(done)):.2f}s/paper", flush=True)
+            print(f"{k + 1}/{len(pending)}  {(time.perf_counter() - t0) / (k + 1):.2f}s/paper", flush=True)
     json.dump(res, open(args.out, "w"))
     print(f"DONE {len(res)} items -> {args.out}")
 
