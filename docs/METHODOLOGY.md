@@ -165,6 +165,69 @@ The Nordic country totals moved back toward the previously deployed figures: Swe
 (35,955 deployed), Denmark 21,146 to 21,948 (20,784), Finland 12,818 to 13,287 (13,563), Norway 8,910 to
 9,324 (9,499).
 
+### 3.2b SweMetrics enrichment (`pipeline/swe*.py`, `make swe-update`)
+
+The API-based corpus (3.1) only sees works that sit in a quantum topic or derived keyword AND carry a Nordic or
+Baltic authorship country. The SweMetrics DuckDB (https://swemetrics.se/duckdb/, key in `.env` as
+`SWEMETRICS_API_KEY`) serves a full OpenAlex mirror (`oa`, snapshot 2026-10-10 when this was built) and the
+Swedish national publication index (`swepub`). This stage casts a wider net, enriches works with Swepub's curated
+data, and judges the new candidates with the same embedding gate as the rescue pass (3.2).
+
+**Candidate pool** (`swepool_build.py`): works NOT already evaluated by the API corpus (the step-05 audit) that match
+the corpus's own 24 paper-level quantum patterns (`paper_level_term_patterns`) in title, abstract or OpenAlex
+keywords, from three sources: the OpenAlex text net (Nordic/Baltic authorship country), Swepub works matched to
+OpenAlex whose OpenAlex record lacks the Nordic country ("country gap"), and Swepub-only works (no OpenAlex id).
+The record gates of step 05 apply unchanged (English or missing language; excluded work types). Abstracts missing in
+OpenAlex are filled from Swepub, and Swepub's author-supplied keywords are kept. A work needs an abstract of at
+least 200 characters, as in the rescue pool. First build: 74,203 text-net hits, of which 48,747 were already
+evaluated; pool of 22,909 (16,559 text net, 3,877 Swepub-only, 2,473 Swepub-matched), 6,672 abstracts filled from Swepub.
+
+**Gate**: the same machinery as 3.2 with its own file prefix (`rescue_train.py --prefix swe`): bge-large embeddings,
+a classifier trained on Eikos labels of a uniform and a targeted sample of THIS pool, thresholds from the uniform
+stratum, Eikos-4B adjudication of the uncertain band (admitted if CORE with P >= 0.50). Admitted works are built
+into full OpenAlex-shaped records from the mirror (`swepool_records.py`; validated on 40 corpus works: abstracts,
+topics, keywords, author sets and ORCIDs identical, authorship order restored as first/middle/last because the
+tables do not store it) and appended to `corpus/data/swe_accepted_works.jsonl`.
+
+**Why a GLiNER2.5 labeller was not adopted**: a zero-shot GLiNER2.5-Decide (OpenVINO, iGPU, about 65 ms per paper, ten
+times faster than Eikos) was scored against the Haiku labels of the 500-paper blind sample, as Eikos was. Eikos:
+80.8 % three-class agreement (kappa 0.71), CORE precision 82 %, recall 89 %. GLiNER with three label phrasings: 32-54 %
+agreement (kappa 0.03-0.29), CORE precision 29-45 %; it labels 44-88 % of the papers CORE (Haiku: 29 %), and its
+confidence does not separate right from wrong (CORE calls are 38 % correct at confidence < 0.4 and 57 % at >= 0.7).
+Fine-tuning on our labels might change that; it has not been tried.
+
+**Validation of the first run** (`docs/validation/swe/`, scripts `swe_validation_sample.py` and `swe_validation_report.py`): a blind sample
+of 230 works (40 per admitted route, 40 uncertain-band works Eikos rejected, 30 low-scoring works), labelled with the
+same rubric by independent Haiku sub-agents that saw only title and abstract. CORE share (the route's precision), 95 % Wilson interval:
+
+| Route | Works admitted | CORE | PERIPHERAL | NOT |
+| --- | --- | --- | --- | --- |
+| classifier alone, OpenAlex text net | 483 | 68 % [52, 80] | 15 % | 18 % |
+| Eikos-adjudicated band, OpenAlex text net | 444 | 55 % [40, 69] | 38 % | 8 % |
+| Swepub, OpenAlex lacks the Nordic country | 506 | 88 % [74, 95] | 5 % | 8 % |
+| Swepub-only (no OpenAlex record) | 1,011 | 88 % [74, 95] | 8 % | 5 % |
+
+Within the OpenAlex routes the score matters a great deal (small n, indicative): classifier P(core) 0.71-0.85 is 48 % CORE (n=21), 0.85-0.95
+83 % (n=12), >= 0.95 100 % (n=7); Eikos P(CORE) 0.5-0.6 is 27 % CORE (n=11), 0.6-0.7 56 % (n=16), >= 0.7 77 % (n=13). The pool is richer in
+quantum-adjacent work (quantum chemistry, nanomaterials) than the rescue pool, so the rescue thresholds are too loose here. What the gate left
+out (controls): about 15 % of the uncertain-band works Eikos rejected are CORE (about 316 of 2,106) and about 3 % of the low-scoring ones
+(one CORE in 30; the interval is wide), so recall is roughly two thirds and this estimate is crude.
+
+**Incremental by design (weekly runs)**: nothing is computed twice.
+
+| Stage | What persists | What a repeat run does |
+| --- | --- | --- |
+| harvest | `swe_state.json`: SweMetrics snapshots, text-net watermark | nothing if the snapshots are unchanged; otherwise only the work ids created since the last harvest (plus a one-slice margin); Swepub (about a minute) in full. A full text-net harvest (about 1 h) is only needed now and then, to catch old works whose text changed |
+| embed | the embedding cache | only works missing from it |
+| sample + labels | the frozen sample, `label_store.jsonl` | the sample is never redrawn; a paper is labelled once per (work id, text hash, model + rubric) |
+| train | scores | cheap; rescored every run so new works get a decision |
+| band | `label_store.jsonl` | only band works never labelled |
+| apply | `swe_decisions.json`, `swe_accepted_works.jsonl` | records are fetched only for newly admitted works, checkpointed per chunk |
+
+`make swe-plan` prints what is pending at every stage with a time estimate and changes nothing; `make swe-update`
+runs the pending stages. `label_store.py import` brought the 9,287 earlier Eikos labels into the store (713 papers had
+been labelled twice, once in the sample and once in the band).
+
 ### 3.3 Split and authors
 
 `split_nordic_corpus.py` streams the final corpus once and writes, for each of the 53
@@ -210,6 +273,28 @@ Patents come from EPO OPS through per-author searches whose results are cached
 default `PATENTS=cache` rebuilds counts from the caches without calling EPO; `PATENTS=full`
 fetches live. `build_patent_links.py` and `build_collaborations.py` derive the two network files.
 Both key on person ids, which is why they run after the dedup.
+
+### 3.8 Opt-outs (`pipeline/apply_optouts.py`, run by `make stage`)
+
+A person who asks to be removed (GDPR) stops being disseminated as a person, and nothing else changes. The last step
+before the export removes, for every opted-out person: their point on every map and their profile record (so no
+ORCID, metrics or topic), their own collaboration entry, and their per-person paper page. It keeps their
+production: their papers still count in every aggregate (`paper_counts_geo.json`, the taxonomy tree), still appear in
+their co-authors' paper lists, and their name stays where it is a property of a paper or patent (co-author chips,
+co-inventors). Their ORCID is removed everywhere. The app already shows a co-author without a profile as a plain
+name, so kept mentions produce no dead links. There is no small-cell rule: institutions are not small enough for an
+aggregate to single a person out. The number of people shown drops by the number removed; papers do not.
+
+The step reads the finished data and writes the staged copies, so the sources stay complete, aggregates are computed
+before removal, and every rebuild applies the same registry again: an opt-out never comes back. A person matches by
+any of their OpenAlex ids (including merged ones) or their ORCID, never by name. The registry is a private,
+git-ignored JSONL file (`private/optout.jsonl`, or `$OPTOUT_FILE`; format in `docs/optout.example.jsonl`) because it is
+personal data and this repository is public. Entries that match nobody stay as standing suppressions. After writing, the
+step fails the export, leaving nothing staged, if a removed ORCID is found in any staged file or a removed person is
+still in a people array or has a collaboration entry; it writes a counts-only report to `pipeline/data/optout_report.json`.
+`OPTOUT_REQUIRED=1` turns a missing registry from a warning into an error. Tested on the real data with a throwaway
+registry: people, own collaboration entries and shard pages removed; mentions as co-author, `paper_counts_geo.json`,
+`patent_links.json`, the taxonomy tree and every other person record unchanged.
 
 ## 4. Why two builds differ
 

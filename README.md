@@ -37,7 +37,7 @@ make setup-openvino      # optional: .venv-openvino, only for the rescue pass
 | `NPU_PY`, `NPU_LIB` | python of the OpenVINO env; optional dir with a matching NPU compiler library | see [NPU setup](docs/NPU_SETUP.md) |
 | `EMBED_DEVICE`, `LABEL_DEVICE` | device for embeddings / for Eikos labelling | `NPU` / `GPU` |
 | `MEM_CAP` | memory cap per stage (via `systemd-run`) | `7G` |
-| `STAGE_DIR` | where `make stage` writes the five JSONs | `build/data` |
+| `STAGE_DIR` | where `make stage` writes the five JSONs and the `person_papers/` shards | `build/data` |
 | `APP_PUBLIC` | the app's `public/data` folder, target of `make publish` | see `.env.example` |
 
 ## Quickstart (no NPU, no rescue)
@@ -48,7 +48,7 @@ Assumes you already have the corpus file (see [Inputs that are not in git](#inpu
 mkdir -p corpus/data
 # place the corpus at corpus/data/sweden_quantum_works.jsonl
 make split RESCUE=0      # corpus -> one file per institution
-make all                 # people, merge, taxonomy, domains, counts, shares, hindex, patents, dedup, stage
+make all                 # people, merge, taxonomy, domains, counts, shares, hindex, patents, dedup, person-papers, stage
 ```
 
 Outputs are in `build/data/`. `make all` never touches the app. To update the app, run `make publish`
@@ -86,6 +86,9 @@ make all
 | `setup-openvino` | Create `.venv-openvino` (OpenVINO, transformers 4.57.6). |
 | `corpus` | Build and classify the corpus from OpenAlex (steps 01-05). |
 | `rescue` | Whole rescue pass: `rescue-pool`, `rescue-embed`, `rescue-sample`, `rescue-label`, `rescue-train`, `rescue-band`, `rescue-apply`. |
+| `swe-plan` | What the SweMetrics enrichment still has to do at each stage, with time estimates. Runs nothing. |
+| `swe-update` | The weekly command: runs only the pending stages (harvest when SweMetrics has a new snapshot, embedding and labelling only for new works). Needs `SWEMETRICS_API_KEY` in `.env` and, for the gate, the OpenVINO environment. See METHODOLOGY 3.2b. |
+| `swe` | The whole SweMetrics enrichment from scratch (harvest, pool, embed, sample, label, train, band, apply). |
 | `split` | Write one corpus file per institution (`RESCUE=0` forces the rule-only corpus). |
 | `authors`, `patents`, `people` | Per-institution author extraction, patents, people data. |
 | `merge`, `concat` | Merge institutions into `people_viz.json`; concatenate works. |
@@ -99,7 +102,9 @@ make all
 | `dedup` | Duplicate-author fusion (splink), then re-run the id-keyed steps. |
 | `stage` | Copy the five JSONs to `STAGE_DIR` (default `build/data`). |
 | `publish` | Copy from `STAGE_DIR` to `APP_PUBLIC`. Never part of `all`. |
-| `all` | `people merge taxonomy domains paper-counts shares hindex patch-patents dedup stage`. |
+| `work-umap` | one global 2-D UMAP over every accepted work's cached embedding (CPU, seeded, about 1 min). |
+| `person-papers` | per-person paper shards for the app's 3D explorer (triangle and UMAP positions); runs after `dedup` so they match the final `people_viz.json`. |
+| `all` | `people merge taxonomy domains paper-counts shares hindex patch-patents dedup person-papers stage`. |
 | `embed` | Embed all works on CUDA (optional). |
 | `embed-npu` | Embed missing works on the Intel NPU. |
 
@@ -129,6 +134,14 @@ models/            Local model files, e.g. models/eikos (git-ignored)
 | `pipeline/caches/work_embeddings_bge.npy` + `work_embedding_ids_bge.json` | about 400 MB | `make embed` or `make embed-npu` | `make domains` re-embeds every work: hours on CPU. |
 | `pipeline/data/<institution>/caches/` (EPO search, biblio, text) | about 330 MB | `PATENTS=full` (slow, needs EPO credentials) | Use `PATENTS=skip`, or a slow `PATENTS=full`. |
 | `pipeline/caches/openalex_global_h_index.jsonl` | small | `make hindex` | Refetched from OpenAlex when missing. |
+
+## Opt-outs (GDPR)
+
+`make stage` (and so `make all`) removes opted-out people from what is exported, keeping their papers in every aggregate
+and their name as a co-author of papers: see METHODOLOGY 3.8. Put the opt-outs in `private/optout.jsonl` (git-ignored, never
+commit it; the format is in `docs/optout.example.jsonl`) or point `OPTOUT_FILE` at it. A missing registry only warns;
+set `OPTOUT_REQUIRED=1` to make it an error. If the per-person paper shards exist in `pipeline/data/person_papers` (`make person-papers`; `make publish` copies them too),
+filtered copies are staged under `STAGE_DIR/person_papers`.
 
 ## Known gaps
 

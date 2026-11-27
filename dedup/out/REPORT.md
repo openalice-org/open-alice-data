@@ -1,6 +1,6 @@
 # Potential duplicate people — splink experiment
 
-Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic model trained unsupervised (EM) on name similarity, first/last publication year, country/university/institution match, and topic/keyword overlap. 398 clusters scored >= 0.5; showing the top 40, enriched with real coauthor overlap scanned from the underlying paper corpus.
+Blocked on normalized surname (9,352 people -> 2344 scored pairs), probabilistic model trained unsupervised (EM) on name similarity, first/last publication year, country/university/institution match, and topic/keyword overlap. 399 clusters scored >= 0.5; showing the top 40, enriched with real coauthor overlap scanned from the underlying paper corpus.
 
 ## Exact-ORCID collisions (near-certain — same ORCID, different OpenAlex id)
 
@@ -133,31 +133,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
 
 ## Top 40 splink clusters
 
-### 1. P. E. Lindelöf — best match_probability 1.000 (2 records)
-
-- **P. E. Lindelöf** — University of Copenhagen, DK — active 1976–2015 — 110 quantum papers — `https://openalex.org/A5082391833`
-- **P. E. Lindelof** — University of Copenhagen, DK — active 1975–2008 — 38 quantum papers — `https://openalex.org/A5111791395`
-  
-  Coauthor overlap:
-  - `82391833` vs `11791395`: 36 shared coauthors (of 148/69), jaccard=0.20
-
-### 2. Rositsa Yakimova — best match_probability 1.000 (2 records)
-
-- **Rositsa Yakimova** — Linköping University, SE — active 1999–2026 — 45 quantum papers — `https://openalex.org/A5028180471`
-- **Rositza Yakimova** — Linköping University, SE — active 2003–2020 — 30 quantum papers — `https://openalex.org/A5113543718`
-  
-  Coauthor overlap:
-  - `28180471` vs `13543718`: 54 shared coauthors (of 173/135), jaccard=0.21
-
-### 3. Mattias Hammar — best match_probability 1.000 (2 records)
-
-- **Mattias Hammar** — KTH, SE — active 1998–2025 — 81 quantum papers — `https://openalex.org/A5090832599`
-- **Matthias Hammar** — KTH, SE — active 2001–2012 — 15 quantum papers — `https://openalex.org/A5108222882`
-  
-  Coauthor overlap:
-  - `90832599` vs `08222882`: 46 shared coauthors (of 183/70), jaccard=0.22
-
-### 4. T. Alt — best match_probability 1.000 (4 records)
+### 1. T. Alt — best match_probability 1.000 (4 records)
 
 - **T. Alt** — University of Bergen (UiB), DE — active 2008–2026 — 122 quantum papers — `https://openalex.org/A5017974378`
 - **T. Alt** — University of Bergen (UiB), NO — active 2013–2025 — 10 quantum papers — `https://openalex.org/A5105178561`
@@ -172,7 +148,15 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `05178561` vs `07887993`: 199 shared coauthors (of 262/250), jaccard=0.64
   - `07828053` vs `07887993`: 233 shared coauthors (of 350/250), jaccard=0.63
 
-### 5. Y. Abulaiti — best match_probability 1.000 (5 records)
+### 2. A. Bilandzic — best match_probability 1.000 (2 records)
+
+- **A. Bilandzic** — University of Copenhagen, DE — active 2011–2026 — 38 quantum papers — `https://openalex.org/A5049364965`
+- **A. Bilandzic** — University of Copenhagen, DE — active 2013–2023 — 17 quantum papers — `https://openalex.org/A5107901112`
+  
+  Coauthor overlap:
+  - `49364965` vs `07901112`: 213 shared coauthors (of 326/257), jaccard=0.58
+
+### 3. Y. Abulaiti — best match_probability 1.000 (5 records)
 
 - **Y. Abulaiti** — Stockholm University, SE — active 2013–2025 — 335 quantum papers — `https://openalex.org/A5056156632`
 - **Y. Abulaiti** — Stockholm University, SE — active 2014–2025 — 17 quantum papers — `https://openalex.org/A5107893109`
@@ -192,7 +176,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `07928810` vs `42292245`: 128 shared coauthors (of 234/150), jaccard=0.50
   - `07949601` vs `42292245`: 148 shared coauthors (of 368/150), jaccard=0.40
 
-### 6. Muhammad Azeem Akbar — best match_probability 1.000 (2 records)
+### 4. Muhammad Azeem Akbar — best match_probability 1.000 (2 records)
 
 - **Muhammad Azeem Akbar** — LUT University, FI — active 2022–2026 — 12 quantum papers — `https://openalex.org/A5036468835`
 - **Muhammad Azeem Akbar** — LUT University, FI — active 2022–2026 — 11 quantum papers — `https://openalex.org/A5101426168`
@@ -200,26 +184,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `36468835` vs `01426168`: 7 shared coauthors (of 25/17), jaccard=0.20
 
-### 7. A. Bilandzic — best match_probability 1.000 (2 records)
-
-- **A. Bilandzic** — University of Copenhagen, DE — active 2011–2026 — 38 quantum papers — `https://openalex.org/A5049364965`
-- **A. Bilandzic** — University of Copenhagen, DE — active 2013–2023 — 17 quantum papers — `https://openalex.org/A5107901112`
-  
-  Coauthor overlap:
-  - `49364965` vs `07901112`: 213 shared coauthors (of 326/257), jaccard=0.58
-
-### 8. T. Paskova — best match_probability 1.000 (3 records)
-
-- **T. Paskova** — Linköping University, SE — active 2001–2004 — 4 quantum papers — `https://openalex.org/A5010271538`
-- **T. Paskova** — Linköping University, SE — active 1998–2024 — 130 quantum papers — `https://openalex.org/A5021946890`
-- **T. Paskova** — Linköping University, SE — active 1999–2009 — 12 quantum papers — `https://openalex.org/A5109961251`
-  
-  Coauthor overlap:
-  - `10271538` vs `21946890`: 15 shared coauthors (of 20/176), jaccard=0.08
-  - `10271538` vs `09961251`: 11 shared coauthors (of 20/24), jaccard=0.33
-  - `21946890` vs `09961251`: 23 shared coauthors (of 176/24), jaccard=0.13
-
-### 9. L. P. Csernai — best match_probability 1.000 (3 records)
+### 5. L. P. Csernai — best match_probability 1.000 (3 records)
 
 - **L. P. Csernai** — University of Bergen (UiB), NO — active 1989–2023 — 105 quantum papers — `https://openalex.org/A5082606628`
 - **L. P. Csernai** — University of Bergen (UiB), NO — active 1990–2015 — 23 quantum papers — `https://openalex.org/A5107828602`
@@ -230,7 +195,18 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `82606628` vs `13653012`: 35 shared coauthors (of 119/40), jaccard=0.28
   - `07828602` vs `13653012`: 13 shared coauthors (of 121/40), jaccard=0.09
 
-### 10. W.-X. Ni — best match_probability 1.000 (2 records)
+### 6. T. Paskova — best match_probability 1.000 (3 records)
+
+- **T. Paskova** — Linköping University, SE — active 2001–2004 — 4 quantum papers — `https://openalex.org/A5010271538`
+- **T. Paskova** — Linköping University, SE — active 1998–2024 — 130 quantum papers — `https://openalex.org/A5021946890`
+- **T. Paskova** — Linköping University, SE — active 1999–2009 — 12 quantum papers — `https://openalex.org/A5109961251`
+  
+  Coauthor overlap:
+  - `10271538` vs `21946890`: 15 shared coauthors (of 20/176), jaccard=0.08
+  - `10271538` vs `09961251`: 11 shared coauthors (of 20/24), jaccard=0.33
+  - `21946890` vs `09961251`: 23 shared coauthors (of 176/24), jaccard=0.13
+
+### 7. W.-X. Ni — best match_probability 1.000 (2 records)
 
 - **W.-X. Ni** — Linköping University, SE — active 1994–2006 — 8 quantum papers — `https://openalex.org/A5109141785`
 - **W.-X. Ni** — Linköping University, SE — active 1989–2010 — 56 quantum papers — `https://openalex.org/A5111958004`
@@ -238,15 +214,15 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `09141785` vs `11958004`: 11 shared coauthors (of 18/94), jaccard=0.11
 
-### 11. Alexei Kalaboukhov — best match_probability 1.000 (2 records)
+### 8. Alexei Kalaboukhov — best match_probability 1.000 (2 records)
 
-- **Alexei Kalaboukhov** — Chalmers, SE — active 2003–2025 — 14 quantum papers — `https://openalex.org/A5058926482`
-- **Alexei Kalaboukhov** — Chalmers, SE — active 2010–2026 — 21 quantum papers — `https://openalex.org/A5073301790`
+- **Alexei Kalaboukhov** — Chalmers, SE — active 2003–2025 — 15 quantum papers — `https://openalex.org/A5058926482`
+- **Alexei Kalaboukhov** — Chalmers, SE — active 2010–2026 — 24 quantum papers — `https://openalex.org/A5073301790`
   
   Coauthor overlap:
-  - `58926482` vs `73301790`: 34 shared coauthors (of 84/135), jaccard=0.18
+  - `58926482` vs `73301790`: 40 shared coauthors (of 87/152), jaccard=0.20
 
-### 12. B. Stugu — best match_probability 1.000 (2 records)
+### 9. B. Stugu — best match_probability 1.000 (2 records)
 
 - **B. Stugu** — University of Bergen (UiB), NO — active 1995–2018 — 25 quantum papers — `https://openalex.org/A5043559433`
 - **B. Stugu** — University of Bergen (UiB), NO — active 2009–2013 — 5 quantum papers — `https://openalex.org/A5142170733`
@@ -254,7 +230,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `43559433` vs `42170733`: 15 shared coauthors (of 406/70), jaccard=0.03
 
-### 13. Anders Smith — best match_probability 1.000 (4 records)
+### 10. Anders Smith — best match_probability 1.000 (4 records)
 
 - **Anders Smith** — University of Copenhagen, DK — active 1993–2013 — 5 quantum papers — `https://openalex.org/A5007365620`
 - **H. Smith** — University of Copenhagen, DK — active 1971–2008 — 50 quantum papers — `https://openalex.org/A5064287340`
@@ -269,15 +245,15 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `64287340` vs `11379224`: 0 shared coauthors (of 37/15), jaccard=0.00
   - `67577741` vs `11379224`: 0 shared coauthors (of 2/15), jaccard=0.00
 
-### 14. Panagiotis B. Tolias — best match_probability 1.000 (2 records)
+### 11. P. E. Lindelöf — best match_probability 1.000 (2 records)
 
-- **Panagiotis B. Tolias** — KTH, SE — active 2016–2026 — 50 quantum papers — `https://openalex.org/A5045142045`
-- **Panagiotis Tolias** — KTH, SE — active 2024–2026 — 7 quantum papers — `https://openalex.org/A5123596632`
+- **P. E. Lindelöf** — University of Copenhagen, DK — active 1976–2015 — 110 quantum papers — `https://openalex.org/A5082391833`
+- **P. E. Lindelof** — University of Copenhagen, DK — active 1975–2008 — 38 quantum papers — `https://openalex.org/A5111791395`
   
   Coauthor overlap:
-  - `45142045` vs `23596632`: 15 shared coauthors (of 43/20), jaccard=0.31
+  - `82391833` vs `11791395`: 36 shared coauthors (of 148/69), jaccard=0.20
 
-### 15. Tatsuo Kobayashi — best match_probability 1.000 (2 records)
+### 12. Tatsuo Kobayashi — best match_probability 1.000 (2 records)
 
 - **Tatsuo Kobayashi** — University of Helsinki, FI — active 1998–1999 — 6 quantum papers — `https://openalex.org/A5102844866`
 - **Tatsuo Kobayashi** — University of Helsinki, FI — active 1998–2000 — 6 quantum papers — `https://openalex.org/A5107251908`
@@ -285,7 +261,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `02844866` vs `07251908`: 3 shared coauthors (of 6/9), jaccard=0.25
 
-### 16. R. M. Nieminen — best match_probability 1.000 (3 records)
+### 13. R. M. Nieminen — best match_probability 1.000 (3 records)
 
 - **R. M. Nieminen** — University of Jyväskylä, FI — active 1979–2012 — 9 quantum papers — `https://openalex.org/A5006540440`
 - **P. Nieminen** — University of Jyväskylä, FI — active 1999–2015 — 9 quantum papers — `https://openalex.org/A5029089302`
@@ -296,10 +272,26 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `06540440` vs `87417962`: 0 shared coauthors (of 45/212), jaccard=0.00
   - `29089302` vs `87417962`: 98 shared coauthors (of 140/212), jaccard=0.39
 
-### 17. Bi-Ying Wang — best match_probability 1.000 (5 records)
+### 14. Mattias Hammar — best match_probability 1.000 (2 records)
+
+- **Mattias Hammar** — KTH, SE — active 1998–2025 — 81 quantum papers — `https://openalex.org/A5090832599`
+- **Matthias Hammar** — KTH, SE — active 2001–2012 — 15 quantum papers — `https://openalex.org/A5108222882`
+  
+  Coauthor overlap:
+  - `90832599` vs `08222882`: 46 shared coauthors (of 183/70), jaccard=0.22
+
+### 15. Rositsa Yakimova — best match_probability 1.000 (2 records)
+
+- **Rositsa Yakimova** — Linköping University, SE — active 1999–2026 — 47 quantum papers — `https://openalex.org/A5028180471`
+- **Rositza Yakimova** — Linköping University, SE — active 2003–2020 — 31 quantum papers — `https://openalex.org/A5113543718`
+  
+  Coauthor overlap:
+  - `28180471` vs `13543718`: 56 shared coauthors (of 182/139), jaccard=0.21
+
+### 16. Bi-Ying Wang — best match_probability 1.000 (5 records)
 
 - **Bi-Ying Wang** — Technical University of Denmark (DTU), CN — active 2020–2022 — 4 quantum papers — `https://openalex.org/A5014158387`
-- **Ying Wang** — University of Copenhagen, DK — active 2021–2026 — 17 quantum papers — `https://openalex.org/A5052300667`
+- **Ying Wang** — University of Copenhagen, DK — active 2021–2026 — 18 quantum papers — `https://openalex.org/A5052300667`
 - **Ying Wang** — University of Copenhagen, DK — active 2020–2023 — 4 quantum papers — `https://openalex.org/A5100347002`
 - **Qianyu Wang** — Technical University of Denmark (DTU), DK — active 2009–2010 — 4 quantum papers — `https://openalex.org/A5100754316`
 - **Yujing Wang** — Technical University of Denmark (DTU), DK — active 2021–2024 — 12 quantum papers — `https://openalex.org/A5100776575`
@@ -316,15 +308,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `00347002` vs `00776575`: 0 shared coauthors (of 26/38), jaccard=0.00
   - `00754316` vs `00776575`: 0 shared coauthors (of 12/38), jaccard=0.00
 
-### 18. M. Guttormsen — best match_probability 1.000 (2 records)
-
-- **M. Guttormsen** — University of Oslo (UiO), NO — active 1978–2026 — 112 quantum papers — `https://openalex.org/A5076665882`
-- **M. Guttormsen** — University of Oslo (UiO), NO — active 1980–2026 — 7 quantum papers — `https://openalex.org/A5105297407`
-  
-  Coauthor overlap:
-  - `76665882` vs `05297407`: 50 shared coauthors (of 456/69), jaccard=0.11
-
-### 19. T. Døssing — best match_probability 1.000 (2 records)
+### 17. T. Døssing — best match_probability 1.000 (2 records)
 
 - **T. Døssing** — University of Copenhagen, DK — active 1977–2024 — 38 quantum papers — `https://openalex.org/A5042042009`
 - **T. Døssing** — University of Copenhagen, DK — active 1974–2025 — 43 quantum papers — `https://openalex.org/A5109986356`
@@ -332,7 +316,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `42042009` vs `09986356`: 54 shared coauthors (of 185/86), jaccard=0.25
 
-### 20. H. Niemi — best match_probability 1.000 (2 records)
+### 18. H. Niemi — best match_probability 1.000 (2 records)
 
 - **H. Niemi** — University of Jyväskylä, FI — active 2006–2026 — 45 quantum papers — `https://openalex.org/A5056145968`
 - **H. Niemi** — University of Jyväskylä, FI — active 2003–2023 — 8 quantum papers — `https://openalex.org/A5111862729`
@@ -340,7 +324,15 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `56145968` vs `11862729`: 13 shared coauthors (of 31/106), jaccard=0.10
 
-### 21. Ö. Skeppstedt — best match_probability 1.000 (3 records)
+### 19. M. Guttormsen — best match_probability 1.000 (2 records)
+
+- **M. Guttormsen** — University of Oslo (UiO), NO — active 1978–2026 — 112 quantum papers — `https://openalex.org/A5076665882`
+- **M. Guttormsen** — University of Oslo (UiO), NO — active 1980–2026 — 7 quantum papers — `https://openalex.org/A5105297407`
+  
+  Coauthor overlap:
+  - `76665882` vs `05297407`: 50 shared coauthors (of 456/69), jaccard=0.11
+
+### 20. Ö. Skeppstedt — best match_probability 1.000 (3 records)
 
 - **Ö. Skeppstedt** — Chalmers, SE — active 1972–2005 — 29 quantum papers — `https://openalex.org/A5049136895`
 - **Ö. Skeppstedt** — Chalmers, SE — active 1980–2003 — 7 quantum papers — `https://openalex.org/A5055421819`
@@ -351,154 +343,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `49136895` vs `96921357`: 15 shared coauthors (of 153/32), jaccard=0.09
   - `55421819` vs `96921357`: 11 shared coauthors (of 55/32), jaccard=0.14
 
-### 22. O. S. AbouZeid — best match_probability 1.000 (4 records)
-
-- **O. S. AbouZeid** — University of Copenhagen, CA — active 2012–2023 — 214 quantum papers — `https://openalex.org/A5022685571`
-- **O.S. AbouZeid** — University of Copenhagen, US — active 2014–2023 — 49 quantum papers — `https://openalex.org/A5024590130`
-- **O. S. AbouZeid** — University of Copenhagen, US — active 2015–2020 — 9 quantum papers — `https://openalex.org/A5107851992`
-- **O. S. AbouZeid** — University of Copenhagen, CA — active 2013–2023 — 61 quantum papers — `https://openalex.org/A5107875663`
-  
-  Coauthor overlap:
-  - `22685571` vs `24590130`: 275 shared coauthors (of 442/297), jaccard=0.59
-  - `22685571` vs `07851992`: 200 shared coauthors (of 442/210), jaccard=0.44
-  - `22685571` vs `07875663`: 311 shared coauthors (of 442/385), jaccard=0.60
-  - `24590130` vs `07851992`: 198 shared coauthors (of 297/210), jaccard=0.64
-  - `24590130` vs `07875663`: 274 shared coauthors (of 297/385), jaccard=0.67
-  - `07851992` vs `07875663`: 201 shared coauthors (of 210/385), jaccard=0.51
-
-### 23. B. Selldén — best match_probability 1.000 (2 records)
-
-- **B. Selldén** — Stockholm University, SE — active 1978–1999 — 15 quantum papers — `https://openalex.org/A5107174078`
-- **B. Selldèn** — Stockholm University, SE — active 1975–1998 — 7 quantum papers — `https://openalex.org/A5107211530`
-  
-  Coauthor overlap:
-  - `07174078` vs `07211530`: 37 shared coauthors (of 303/48), jaccard=0.12
-
-### 24. Y. T. M. Saarikko — best match_probability 1.000 (3 records)
-
-- **Y. T. M. Saarikko** — University of Helsinki, FI — active 1986–1987 — 4 quantum papers — `https://openalex.org/A5000398470`
-- **H. M. T. Saarikko** — University of Helsinki, FI — active 1986–1990 — 8 quantum papers — `https://openalex.org/A5103633354`
-- **H. Saarikko** — University of Helsinki, FI — active 1991–2022 — 12 quantum papers — `https://openalex.org/A5107839022`
-  
-  Coauthor overlap:
-  - `00398470` vs `03633354`: 83 shared coauthors (of 84/102), jaccard=0.81
-  - `00398470` vs `07839022`: 23 shared coauthors (of 84/221), jaccard=0.08
-  - `03633354` vs `07839022`: 28 shared coauthors (of 102/221), jaccard=0.09
-
-### 25. J.S. Larsen — best match_probability 1.000 (6 records)
-
-- **J.S. Larsen** — University of Copenhagen, DK — active 1973–2005 — 23 quantum papers — `https://openalex.org/A5004555375`
-- **Sine Larsen** — University of Copenhagen, DK — active 1993–2011 — 4 quantum papers — `https://openalex.org/A5028789665`
-- **U Larsen** — University of Copenhagen, DK — active 1972–1990 — 9 quantum papers — `https://openalex.org/A5030758856`
-- **T. W. Larsen** — University of Copenhagen, DK — active 2014–2023 — 15 quantum papers — `https://openalex.org/A5079057457`
-- **Ulf Larsen** — University of Copenhagen, DK — active 1972–1998 — 11 quantum papers — `https://openalex.org/A5110290014`
-- **J.S. Larsen** — University of Copenhagen, DK — active 1975–2001 — 11 quantum papers — `https://openalex.org/A5113462416`
-  
-  Coauthor overlap:
-  - `04555375` vs `28789665`: 0 shared coauthors (of 85/5), jaccard=0.00
-  - `04555375` vs `30758856`: 0 shared coauthors (of 85/5), jaccard=0.00
-  - `04555375` vs `79057457`: 0 shared coauthors (of 85/36), jaccard=0.00
-  - `04555375` vs `10290014`: 0 shared coauthors (of 85/3), jaccard=0.00
-  - `04555375` vs `13462416`: 35 shared coauthors (of 85/74), jaccard=0.28
-  - `28789665` vs `30758856`: 0 shared coauthors (of 5/5), jaccard=0.00
-  - `28789665` vs `79057457`: 0 shared coauthors (of 5/36), jaccard=0.00
-  - `28789665` vs `10290014`: 0 shared coauthors (of 5/3), jaccard=0.00
-  - `28789665` vs `13462416`: 0 shared coauthors (of 5/74), jaccard=0.00
-  - `30758856` vs `79057457`: 0 shared coauthors (of 5/36), jaccard=0.00
-  - `30758856` vs `10290014`: 3 shared coauthors (of 5/3), jaccard=0.60
-  - `30758856` vs `13462416`: 0 shared coauthors (of 5/74), jaccard=0.00
-  - `79057457` vs `10290014`: 0 shared coauthors (of 36/3), jaccard=0.00
-  - `79057457` vs `13462416`: 0 shared coauthors (of 36/74), jaccard=0.00
-  - `10290014` vs `13462416`: 0 shared coauthors (of 3/74), jaccard=0.00
-
-### 26. Mats‐Erik Pistol — best match_probability 1.000 (3 records)
-
-- **Mats‐Erik Pistol** — Lund, SE — active 1986–2025 — 139 quantum papers — `https://openalex.org/A5081821084`
-- **M.-E. Pistol** — Lund, SE — active 1984–2015 — 28 quantum papers — `https://openalex.org/A5108476997`
-- **M-E Pistol** — Lund, SE — active 1992–2013 — 6 quantum papers — `https://openalex.org/A5111514805`
-  
-  Coauthor overlap:
-  - `81821084` vs `08476997`: 41 shared coauthors (of 171/60), jaccard=0.22
-  - `81821084` vs `11514805`: 19 shared coauthors (of 171/19), jaccard=0.11
-  - `08476997` vs `11514805`: 11 shared coauthors (of 60/19), jaccard=0.16
-
-### 27. Mads R. V. Jørgensen — best match_probability 1.000 (5 records)
-
-- **Mads R. V. Jørgensen** — Aarhus University, DK — active 2011–2021 — 5 quantum papers — `https://openalex.org/A5018090594`
-- **Poul Jørgensen** — Aarhus University, DK — active 1970–2025 — 91 quantum papers — `https://openalex.org/A5023289690`
-- **Nils B. Jørgensen** — Aarhus University, DK — active 2014–2022 — 11 quantum papers — `https://openalex.org/A5046639199`
-- **Poul Jo rgensen** — Aarhus University, DK — active 1972–1999 — 55 quantum papers — `https://openalex.org/A5109984137`
-- **Poul J�rgensen** — Aarhus University, DK — active 1974–1998 — 4 quantum papers — `https://openalex.org/A5110162139`
-  
-  Coauthor overlap:
-  - `18090594` vs `23289690`: 0 shared coauthors (of 20/124), jaccard=0.00
-  - `18090594` vs `46639199`: 0 shared coauthors (of 20/24), jaccard=0.00
-  - `18090594` vs `09984137`: 0 shared coauthors (of 20/47), jaccard=0.00
-  - `18090594` vs `10162139`: 0 shared coauthors (of 20/10), jaccard=0.00
-  - `23289690` vs `46639199`: 0 shared coauthors (of 124/24), jaccard=0.00
-  - `23289690` vs `09984137`: 29 shared coauthors (of 124/47), jaccard=0.20
-  - `23289690` vs `10162139`: 7 shared coauthors (of 124/10), jaccard=0.06
-  - `46639199` vs `09984137`: 0 shared coauthors (of 24/47), jaccard=0.00
-  - `46639199` vs `10162139`: 0 shared coauthors (of 24/10), jaccard=0.00
-  - `09984137` vs `10162139`: 6 shared coauthors (of 47/10), jaccard=0.12
-
-### 28. S. I. A. Garpman — best match_probability 1.000 (2 records)
-
-- **S. I. A. Garpman** — Lund, SE — active 1981–2012 — 27 quantum papers — `https://openalex.org/A5023906312`
-- **S. Garpman** — Lund, SE — active 1983–2004 — 15 quantum papers — `https://openalex.org/A5037377033`
-  
-  Coauthor overlap:
-  - `23906312` vs `37377033`: 350 shared coauthors (of 506/443), jaccard=0.58
-
-### 29. P. Villanen — best match_probability 1.000 (2 records)
-
-- **P. Villanen** — University of Helsinki, FI — active 1973–1988 — 27 quantum papers — `https://openalex.org/A5070454590`
-- **H. Villanen** — University of Helsinki, FI — active 1969–1979 — 11 quantum papers — `https://openalex.org/A5072523858`
-  
-  Coauthor overlap:
-  - `70454590` vs `72523858`: 70 shared coauthors (of 123/73), jaccard=0.56
-
-### 30. R. Kink — best match_probability 1.000 (2 records)
-
-- **R. Kink** — University of Tartu, EE — active 1993–2003 — 10 quantum papers — `https://openalex.org/A5049101566`
-- **M. Kink** — University of Tartu, EE — active 1999–2003 — 6 quantum papers — `https://openalex.org/A5060186409`
-  
-  Coauthor overlap:
-  - `49101566` vs `60186409`: 7 shared coauthors (of 26/8), jaccard=0.26
-
-### 31. Jian Qi Shen — best match_probability 1.000 (2 records)
-
-- **Jian Qi Shen** — KTH, CN — active 2004–2014 — 4 quantum papers — `https://openalex.org/A5104357781`
-- **Jian Qi Shen** — KTH, CN — active 2004–2019 — 19 quantum papers — `https://openalex.org/A5110129322`
-  
-  Coauthor overlap:
-  - `04357781` vs `10129322`: 1 shared coauthors (of 2/4), jaccard=0.20
-
-### 32. G. Jarlskog — best match_probability 1.000 (2 records)
-
-- **G. Jarlskog** — Lund, SE — active 1973–2002 — 48 quantum papers — `https://openalex.org/A5107835780`
-- **G. Jarlskog** — Lund, SE — active 1973–2002 — 6 quantum papers — `https://openalex.org/A5107925079`
-  
-  Coauthor overlap:
-  - `07835780` vs `07925079`: 150 shared coauthors (of 354/161), jaccard=0.41
-
-### 33. Roope Uola — best match_probability 1.000 (2 records)
-
-- **Roope Uola** — Uppsala University, SE — active 2024–2026 — 6 quantum papers — `https://openalex.org/A5012445150`
-- **Roope Uola** — Uppsala University, SE — active 2024–2026 — 4 quantum papers — `https://openalex.org/A5138651889`
-  
-  Coauthor overlap:
-  - `12445150` vs `38651889`: 4 shared coauthors (of 15/14), jaccard=0.16
-
-### 34. J. Mygind — best match_probability 1.000 (2 records)
-
-- **J. Mygind** — Technical University of Denmark (DTU), DK — active 1976–2020 — 130 quantum papers — `https://openalex.org/A5025803420`
-- **J. Mygind** — Technical University of Denmark (DTU), DK — active 1976–2008 — 7 quantum papers — `https://openalex.org/A5109245264`
-  
-  Coauthor overlap:
-  - `25803420` vs `09245264`: 12 shared coauthors (of 132/14), jaccard=0.09
-
-### 35. Finn Karlsson — best match_probability 1.000 (6 records)
+### 21. Finn Karlsson — best match_probability 1.000 (6 records)
 
 - **Finn Karlsson** — Uppsala University, SE — active 1975–1994 — 9 quantum papers — `https://openalex.org/A5040697525`
 - **Hans Karlsson** — Uppsala University, SE — active 1992–2023 — 25 quantum papers — `https://openalex.org/A5053779217`
@@ -524,7 +369,47 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `86387984` vs `11538220`: 0 shared coauthors (of 30/6), jaccard=0.00
   - `02812111` vs `11538220`: 6 shared coauthors (of 55/6), jaccard=0.11
 
-### 36. X.D. Wang — best match_probability 1.000 (12 records)
+### 22. Jian Qi Shen — best match_probability 1.000 (2 records)
+
+- **Jian Qi Shen** — KTH, CN — active 2004–2014 — 4 quantum papers — `https://openalex.org/A5104357781`
+- **Jian Qi Shen** — KTH, CN — active 2004–2019 — 19 quantum papers — `https://openalex.org/A5110129322`
+  
+  Coauthor overlap:
+  - `04357781` vs `10129322`: 1 shared coauthors (of 2/4), jaccard=0.20
+
+### 23. J. Mygind — best match_probability 1.000 (2 records)
+
+- **J. Mygind** — Technical University of Denmark (DTU), DK — active 1976–2020 — 130 quantum papers — `https://openalex.org/A5025803420`
+- **J. Mygind** — Technical University of Denmark (DTU), DK — active 1976–2008 — 7 quantum papers — `https://openalex.org/A5109245264`
+  
+  Coauthor overlap:
+  - `25803420` vs `09245264`: 12 shared coauthors (of 132/14), jaccard=0.09
+
+### 24. Panagiotis B. Tolias — best match_probability 1.000 (2 records)
+
+- **Panagiotis B. Tolias** — KTH, SE — active 2016–2026 — 50 quantum papers — `https://openalex.org/A5045142045`
+- **Panagiotis Tolias** — KTH, SE — active 2024–2026 — 7 quantum papers — `https://openalex.org/A5123596632`
+  
+  Coauthor overlap:
+  - `45142045` vs `23596632`: 15 shared coauthors (of 43/20), jaccard=0.31
+
+### 25. Roope Uola — best match_probability 1.000 (2 records)
+
+- **Roope Uola** — Uppsala University, SE — active 2024–2026 — 6 quantum papers — `https://openalex.org/A5012445150`
+- **Roope Uola** — Uppsala University, SE — active 2024–2026 — 4 quantum papers — `https://openalex.org/A5138651889`
+  
+  Coauthor overlap:
+  - `12445150` vs `38651889`: 4 shared coauthors (of 15/14), jaccard=0.16
+
+### 26. G. Jarlskog — best match_probability 1.000 (2 records)
+
+- **G. Jarlskog** — Lund, SE — active 1973–2002 — 48 quantum papers — `https://openalex.org/A5107835780`
+- **G. Jarlskog** — Lund, SE — active 1973–2002 — 6 quantum papers — `https://openalex.org/A5107925079`
+  
+  Coauthor overlap:
+  - `07835780` vs `07925079`: 150 shared coauthors (of 354/161), jaccard=0.41
+
+### 27. X.D. Wang — best match_probability 1.000 (12 records)
 
 - **X.D. Wang** — Chalmers, SE — active 2003–2006 — 9 quantum papers — `https://openalex.org/A5015753045`
 - **S. Wang** — Chalmers, SE — active 1999–2017 — 9 quantum papers — `https://openalex.org/A5024699944`
@@ -607,7 +492,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `11877546` vs `15588274`: 22 shared coauthors (of 116/158), jaccard=0.09
   - `12457577` vs `15588274`: 28 shared coauthors (of 57/158), jaccard=0.15
 
-### 37. P.R. Christensen — best match_probability 1.000 (10 records)
+### 28. P.R. Christensen — best match_probability 1.000 (10 records)
 
 - **P.R. Christensen** — University of Copenhagen, DK — active 1968–1982 — 9 quantum papers — `https://openalex.org/A5003914513`
 - **E.R. Christensen** — Aarhus University, DK — active 2018–2026 — 8 quantum papers — `https://openalex.org/A5016036202`
@@ -667,7 +552,7 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   - `07919220` vs `14374859`: 11 shared coauthors (of 285/149), jaccard=0.03
   - `10169226` vs `14374859`: 0 shared coauthors (of 74/149), jaccard=0.00
 
-### 38. W. Seifert — best match_probability 1.000 (2 records)
+### 29. W. Seifert — best match_probability 1.000 (2 records)
 
 - **W. Seifert** — Lund, SE — active 1995–2003 — 16 quantum papers — `https://openalex.org/A5010460577`
 - **W. Seifert** — Lund, SE — active 1990–2008 — 163 quantum papers — `https://openalex.org/A5109428769`
@@ -675,7 +560,61 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `10460577` vs `09428769`: 21 shared coauthors (of 28/205), jaccard=0.10
 
-### 39. Rui Lin — best match_probability 1.000 (2 records)
+### 30. O. S. AbouZeid — best match_probability 1.000 (4 records)
+
+- **O. S. AbouZeid** — University of Copenhagen, CA — active 2012–2023 — 214 quantum papers — `https://openalex.org/A5022685571`
+- **O.S. AbouZeid** — University of Copenhagen, US — active 2014–2023 — 49 quantum papers — `https://openalex.org/A5024590130`
+- **O. S. AbouZeid** — University of Copenhagen, US — active 2015–2020 — 9 quantum papers — `https://openalex.org/A5107851992`
+- **O. S. AbouZeid** — University of Copenhagen, CA — active 2013–2023 — 61 quantum papers — `https://openalex.org/A5107875663`
+  
+  Coauthor overlap:
+  - `22685571` vs `24590130`: 275 shared coauthors (of 442/297), jaccard=0.59
+  - `22685571` vs `07851992`: 200 shared coauthors (of 442/210), jaccard=0.44
+  - `22685571` vs `07875663`: 311 shared coauthors (of 442/385), jaccard=0.60
+  - `24590130` vs `07851992`: 198 shared coauthors (of 297/210), jaccard=0.64
+  - `24590130` vs `07875663`: 274 shared coauthors (of 297/385), jaccard=0.67
+  - `07851992` vs `07875663`: 201 shared coauthors (of 210/385), jaccard=0.51
+
+### 31. J. Lundsgaard Hansen — best match_probability 1.000 (2 records)
+
+- **J. Lundsgaard Hansen** — Aarhus University, DK — active 2001–2019 — 13 quantum papers — `https://openalex.org/A5059522513`
+- **J. Lundsgaard Hansen** — Aarhus University, DK — active 1997–2005 — 6 quantum papers — `https://openalex.org/A5109109892`
+  
+  Coauthor overlap:
+  - `59522513` vs `09109892`: 4 shared coauthors (of 31/8), jaccard=0.11
+
+### 32. Tony Hansson — best match_probability 1.000 (4 records)
+
+- **Tony Hansson** — Stockholm University, SE — active 1989–2020 — 33 quantum papers — `https://openalex.org/A5013286863`
+- **T. H. Hansson** — Stockholm University, SE — active 2008–2026 — 6 quantum papers — `https://openalex.org/A5018626705`
+- **Hans Hansson** — Stockholm University, SE — active 2006–2022 — 7 quantum papers — `https://openalex.org/A5084421206`
+- **T. H. Hansson** — Stockholm University, SE — active 1989–2025 — 47 quantum papers — `https://openalex.org/A5102968806`
+  
+  Coauthor overlap:
+  - `13286863` vs `18626705`: 4 shared coauthors (of 55/12), jaccard=0.06
+  - `13286863` vs `84421206`: 3 shared coauthors (of 55/16), jaccard=0.04
+  - `13286863` vs `02968806`: 8 shared coauthors (of 55/49), jaccard=0.08
+  - `18626705` vs `84421206`: 2 shared coauthors (of 12/16), jaccard=0.08
+  - `18626705` vs `02968806`: 7 shared coauthors (of 12/49), jaccard=0.13
+  - `84421206` vs `02968806`: 6 shared coauthors (of 16/49), jaccard=0.10
+
+### 33. L. Y. Gorelik — best match_probability 1.000 (2 records)
+
+- **L. Y. Gorelik** — Chalmers, SE — active 2002–2025 — 7 quantum papers — `https://openalex.org/A5030377087`
+- **L. Y. Gorelik** — Chalmers, SE — active 1994–2026 — 94 quantum papers — `https://openalex.org/A5111942820`
+  
+  Coauthor overlap:
+  - `30377087` vs `11942820`: 16 shared coauthors (of 18/70), jaccard=0.22
+
+### 34. Andreas Walther — best match_probability 1.000 (2 records)
+
+- **Andreas Walther** — Lund, SE — active 2007–2026 — 32 quantum papers — `https://openalex.org/A5018406941`
+- **Andreas Walther** — Lund, SE — active 2014–2024 — 9 quantum papers — `https://openalex.org/A5060067635`
+  
+  Coauthor overlap:
+  - `18406941` vs `60067635`: 15 shared coauthors (of 56/26), jaccard=0.22
+
+### 35. Rui Lin — best match_probability 1.000 (2 records)
 
 - **Rui Lin** — Chalmers, SE — active 2019–2025 — 17 quantum papers — `https://openalex.org/A5017137228`
 - **Rui Lin** — Chalmers, SE — active 2024–2025 — 4 quantum papers — `https://openalex.org/A5116493618`
@@ -683,10 +622,127 @@ Blocked on normalized surname (9,352 people -> 2320 scored pairs), probabilistic
   Coauthor overlap:
   - `17137228` vs `16493618`: 5 shared coauthors (of 31/12), jaccard=0.13
 
-### 40. J. Lundsgaard Hansen — best match_probability 1.000 (2 records)
+### 36. Bing Zhao — best match_probability 1.000 (8 records)
 
-- **J. Lundsgaard Hansen** — Aarhus University, DK — active 2001–2019 — 13 quantum papers — `https://openalex.org/A5059522513`
-- **J. Lundsgaard Hansen** — Aarhus University, DK — active 1997–2005 — 6 quantum papers — `https://openalex.org/A5109109892`
+- **Bing Zhao** — Chalmers, SE — active 2019–2026 — 17 quantum papers — `https://openalex.org/A5000420308`
+- **Huan Zhao** — Chalmers, SE — active 2008–2014 — 4 quantum papers — `https://openalex.org/A5017380031`
+- **Hongliang Zhao** — Chalmers, SE — active 2008–2015 — 8 quantum papers — `https://openalex.org/A5025667143`
+- **Qing Xiang Zhao** — Chalmers, SE — active 1998–2008 — 23 quantum papers — `https://openalex.org/A5046868738`
+- **Ming Zhao** — Linköping University, SE — active 2005–2008 — 11 quantum papers — `https://openalex.org/A5056409480`
+- **Ping Zhao** — Chalmers, SE — active 2021–2023 — 4 quantum papers — `https://openalex.org/A5062639915`
+- **Qing Xiang Zhao** — Chalmers, SE — active 2004–2004 — 4 quantum papers — `https://openalex.org/A5074119360`
+- **Qiming Zhao** — Linköping University, SE — active 1987–2014 — 21 quantum papers — `https://openalex.org/A5090128675`
   
   Coauthor overlap:
-  - `59522513` vs `09109892`: 4 shared coauthors (of 31/8), jaccard=0.11
+  - `00420308` vs `17380031`: 0 shared coauthors (of 62/22), jaccard=0.00
+  - `00420308` vs `25667143`: 0 shared coauthors (of 62/22), jaccard=0.00
+  - `00420308` vs `46868738`: 0 shared coauthors (of 62/44), jaccard=0.00
+  - `00420308` vs `56409480`: 0 shared coauthors (of 62/34), jaccard=0.00
+  - `00420308` vs `62639915`: 0 shared coauthors (of 62/8), jaccard=0.00
+  - `00420308` vs `74119360`: 0 shared coauthors (of 62/1), jaccard=0.00
+  - `00420308` vs `90128675`: 0 shared coauthors (of 62/53), jaccard=0.00
+  - `17380031` vs `25667143`: 5 shared coauthors (of 22/22), jaccard=0.13
+  - `17380031` vs `46868738`: 6 shared coauthors (of 22/44), jaccard=0.10
+  - `17380031` vs `56409480`: 0 shared coauthors (of 22/34), jaccard=0.00
+  - `17380031` vs `62639915`: 0 shared coauthors (of 22/8), jaccard=0.00
+  - `17380031` vs `74119360`: 0 shared coauthors (of 22/1), jaccard=0.00
+  - `17380031` vs `90128675`: 0 shared coauthors (of 22/53), jaccard=0.00
+  - `25667143` vs `46868738`: 8 shared coauthors (of 22/44), jaccard=0.14
+  - `25667143` vs `56409480`: 0 shared coauthors (of 22/34), jaccard=0.00
+  - `25667143` vs `62639915`: 0 shared coauthors (of 22/8), jaccard=0.00
+  - `25667143` vs `74119360`: 0 shared coauthors (of 22/1), jaccard=0.00
+  - `25667143` vs `90128675`: 0 shared coauthors (of 22/53), jaccard=0.00
+  - `46868738` vs `56409480`: 0 shared coauthors (of 44/34), jaccard=0.00
+  - `46868738` vs `62639915`: 0 shared coauthors (of 44/8), jaccard=0.00
+  - `46868738` vs `74119360`: 1 shared coauthors (of 44/1), jaccard=0.02
+  - `46868738` vs `90128675`: 8 shared coauthors (of 44/53), jaccard=0.09
+  - `56409480` vs `62639915`: 0 shared coauthors (of 34/8), jaccard=0.00
+  - `56409480` vs `74119360`: 0 shared coauthors (of 34/1), jaccard=0.00
+  - `56409480` vs `90128675`: 0 shared coauthors (of 34/53), jaccard=0.00
+  - `62639915` vs `74119360`: 0 shared coauthors (of 8/1), jaccard=0.00
+  - `62639915` vs `90128675`: 0 shared coauthors (of 8/53), jaccard=0.00
+  - `74119360` vs `90128675`: 0 shared coauthors (of 1/53), jaccard=0.00
+
+### 37. S. Marcinkevičius — best match_probability 1.000 (2 records)
+
+- **S. Marcinkevičius** — KTH, SE — active 1992–2025 — 133 quantum papers — `https://openalex.org/A5050017157`
+- **S. Marcinkevičius** — KTH, SE — active 2002–2016 — 7 quantum papers — `https://openalex.org/A5111813415`
+  
+  Coauthor overlap:
+  - `50017157` vs `11813415`: 17 shared coauthors (of 195/23), jaccard=0.08
+
+### 38. C. J. Pethick — best match_probability 1.000 (2 records)
+
+- **C. J. Pethick** — Nordita, SE — active 1985–2025 — 79 quantum papers — `https://openalex.org/A5023802370`
+- **C. J. Pethick** — Nordita, SE — active 2001–2017 — 16 quantum papers — `https://openalex.org/A5084878466`
+  
+  Coauthor overlap:
+  - `23802370` vs `84878466`: 6 shared coauthors (of 56/9), jaccard=0.10
+
+### 39. Lars Jönsson — best match_probability 1.000 (10 records)
+
+- **Lars Jönsson** — Chalmers, SE — active 1986–2019 — 9 quantum papers — `https://openalex.org/A5001921879`
+- **Bo Jönsson** — Chalmers, SE — active 1989–1994 — 4 quantum papers — `https://openalex.org/A5004251967`
+- **Lars-Ove Jönsson** — Lund, SE — active 1995–1997 — 5 quantum papers — `https://openalex.org/A5014232261`
+- **Per Jönsson** — Lund, SE — active 1993–2023 — 23 quantum papers — `https://openalex.org/A5015919640`
+- **G.G. Jonsson** — Lund, SE — active 1968–1981 — 10 quantum papers — `https://openalex.org/A5103490102`
+- **Leif Jönsson** — Lund, SE — active 1988–2025 — 6 quantum papers — `https://openalex.org/A5104357143`
+- **L. Jönsson** — Lund, SE — active 2011–2013 — 6 quantum papers — `https://openalex.org/A5105833447`
+- **L. Jönsson** — Lund, SE — active 1973–2013 — 65 quantum papers — `https://openalex.org/A5107833573`
+- **J. A. Jonsson** — Lund, SE — active 1990–1992 — 7 quantum papers — `https://openalex.org/A5108523787`
+- **Bo Jönsson** — Lund, SE — active 1981–1989 — 11 quantum papers — `https://openalex.org/A5111582365`
+  
+  Coauthor overlap:
+  - `01921879` vs `04251967`: 0 shared coauthors (of 16/10), jaccard=0.00
+  - `01921879` vs `14232261`: 0 shared coauthors (of 16/2), jaccard=0.00
+  - `01921879` vs `15919640`: 0 shared coauthors (of 16/57), jaccard=0.00
+  - `01921879` vs `03490102`: 0 shared coauthors (of 16/19), jaccard=0.00
+  - `01921879` vs `04357143`: 0 shared coauthors (of 16/12), jaccard=0.00
+  - `01921879` vs `05833447`: 0 shared coauthors (of 16/146), jaccard=0.00
+  - `01921879` vs `07833573`: 0 shared coauthors (of 16/577), jaccard=0.00
+  - `01921879` vs `08523787`: 0 shared coauthors (of 16/4), jaccard=0.00
+  - `01921879` vs `11582365`: 0 shared coauthors (of 16/13), jaccard=0.00
+  - `04251967` vs `14232261`: 0 shared coauthors (of 10/2), jaccard=0.00
+  - `04251967` vs `15919640`: 0 shared coauthors (of 10/57), jaccard=0.00
+  - `04251967` vs `03490102`: 0 shared coauthors (of 10/19), jaccard=0.00
+  - `04251967` vs `04357143`: 0 shared coauthors (of 10/12), jaccard=0.00
+  - `04251967` vs `05833447`: 0 shared coauthors (of 10/146), jaccard=0.00
+  - `04251967` vs `07833573`: 0 shared coauthors (of 10/577), jaccard=0.00
+  - `04251967` vs `08523787`: 0 shared coauthors (of 10/4), jaccard=0.00
+  - `04251967` vs `11582365`: 0 shared coauthors (of 10/13), jaccard=0.00
+  - `14232261` vs `15919640`: 0 shared coauthors (of 2/57), jaccard=0.00
+  - `14232261` vs `03490102`: 0 shared coauthors (of 2/19), jaccard=0.00
+  - `14232261` vs `04357143`: 0 shared coauthors (of 2/12), jaccard=0.00
+  - `14232261` vs `05833447`: 0 shared coauthors (of 2/146), jaccard=0.00
+  - `14232261` vs `07833573`: 0 shared coauthors (of 2/577), jaccard=0.00
+  - `14232261` vs `08523787`: 0 shared coauthors (of 2/4), jaccard=0.00
+  - `14232261` vs `11582365`: 0 shared coauthors (of 2/13), jaccard=0.00
+  - `15919640` vs `03490102`: 0 shared coauthors (of 57/19), jaccard=0.00
+  - `15919640` vs `04357143`: 0 shared coauthors (of 57/12), jaccard=0.00
+  - `15919640` vs `05833447`: 0 shared coauthors (of 57/146), jaccard=0.00
+  - `15919640` vs `07833573`: 0 shared coauthors (of 57/577), jaccard=0.00
+  - `15919640` vs `08523787`: 1 shared coauthors (of 57/4), jaccard=0.02
+  - `15919640` vs `11582365`: 0 shared coauthors (of 57/13), jaccard=0.00
+  - `03490102` vs `04357143`: 0 shared coauthors (of 19/12), jaccard=0.00
+  - `03490102` vs `05833447`: 0 shared coauthors (of 19/146), jaccard=0.00
+  - `03490102` vs `07833573`: 0 shared coauthors (of 19/577), jaccard=0.00
+  - `03490102` vs `08523787`: 0 shared coauthors (of 19/4), jaccard=0.00
+  - `03490102` vs `11582365`: 0 shared coauthors (of 19/13), jaccard=0.00
+  - `04357143` vs `05833447`: 2 shared coauthors (of 12/146), jaccard=0.01
+  - `04357143` vs `07833573`: 4 shared coauthors (of 12/577), jaccard=0.01
+  - `04357143` vs `08523787`: 0 shared coauthors (of 12/4), jaccard=0.00
+  - `04357143` vs `11582365`: 0 shared coauthors (of 12/13), jaccard=0.00
+  - `05833447` vs `07833573`: 127 shared coauthors (of 146/577), jaccard=0.21
+  - `05833447` vs `08523787`: 0 shared coauthors (of 146/4), jaccard=0.00
+  - `05833447` vs `11582365`: 0 shared coauthors (of 146/13), jaccard=0.00
+  - `07833573` vs `08523787`: 0 shared coauthors (of 577/4), jaccard=0.00
+  - `07833573` vs `11582365`: 0 shared coauthors (of 577/13), jaccard=0.00
+  - `08523787` vs `11582365`: 0 shared coauthors (of 4/13), jaccard=0.00
+
+### 40. B. Åsman — best match_probability 1.000 (2 records)
+
+- **B. Åsman** — Stockholm University, SE — active 1992–2012 — 8 quantum papers — `https://openalex.org/A5106396595`
+- **B. Åsman** — Stockholm University, SE — active 1981–2012 — 214 quantum papers — `https://openalex.org/A5107824863`
+  
+  Coauthor overlap:
+  - `06396595` vs `07824863`: 323 shared coauthors (of 371/741), jaccard=0.41

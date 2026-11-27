@@ -7,6 +7,7 @@ PY          ?= $(CURDIR)/.venv/bin/python
 APP_PUBLIC  ?= $(CURDIR)/../open-alice/public/data
 STAGE_DIR   ?= build/data
 RESCUE      ?= 1
+SWE         ?= 1
 PATENTS     ?= cache    # cache = rebuild from pipeline/data/<uni>/caches only, no EPO calls (fast, no creds)
 #                         full  = live EPO fetch, resumes from caches (slow, needs EPO_* in .env)
 #                         skip  = no patent data at all (all patent counts 0)
@@ -15,7 +16,7 @@ P            = cd pipeline &&
 EPO_FLAGS    = $(if $(filter full,$(PATENTS)),,$(if $(filter cache,$(PATENTS)),--skip-fetch,--skip-patents))
 
 .PHONY: help setup setup-openvino setup-dedup dedup rescue rescue-pool rescue-embed rescue-sample rescue-label rescue-train rescue-band rescue-apply \
-        corpus split authors patents people merge concat taxonomy embed embed-npu domains \
+        corpus split authors patents people merge concat taxonomy embed embed-npu work-umap domains \
         paper-counts shares hindex patch-patents links collab stage publish all
 help:
 	@echo "Setup (uv)"
@@ -51,7 +52,7 @@ help:
 	@echo "Duplicate authors"
 	@echo "  dedup           splink duplicate-author fusion (mandatory), then re-run id-keyed steps"
 	@echo "Output"
-	@echo "  stage           copy the 5 JSONs to STAGE_DIR=$(STAGE_DIR)"
+	@echo "  stage           copy the 5 JSONs to STAGE_DIR=$(STAGE_DIR), applying the GDPR opt-outs (private/optout.jsonl)"
 	@echo "  publish         copy STAGE_DIR to APP_PUBLIC=$(APP_PUBLIC) (explicit, never part of all)"
 	@echo "  all             people merge taxonomy domains paper-counts shares hindex patch-patents dedup stage"
 	@echo "Embedding (optional)"
@@ -73,7 +74,10 @@ corpus:
 
 # RESCUE=1 (default): split the corpus WITH the rescue pass when `make rescue` has produced it; RESCUE=0 forces the rule-only corpus.
 CORPUS_RESCUED = corpus/data/sweden_quantum_works_with_rescue.jsonl
-CORPUS_FILE    = $(if $(and $(filter 1,$(RESCUE)),$(wildcard $(CORPUS_RESCUED))),../$(CORPUS_RESCUED),../corpus/data/sweden_quantum_works.jsonl)
+CORPUS_SWE     = corpus/data/sweden_quantum_works_with_swe.jsonl
+CORPUS_BASE    = $(if $(and $(filter 1,$(RESCUE)),$(wildcard $(CORPUS_RESCUED))),../$(CORPUS_RESCUED),../corpus/data/sweden_quantum_works.jsonl)
+# SWE=1 (default): when `make swe-integrate` has produced the SweMetrics-enriched corpus, split that one; SWE=0 forces the base corpus.
+CORPUS_FILE    = $(if $(and $(filter 1,$(SWE)),$(wildcard $(CORPUS_SWE))),../$(CORPUS_SWE),$(CORPUS_BASE))
 split:
 	@echo "splitting $(CORPUS_FILE)"
 	$(P) $(PY) split_nordic_corpus.py $(CORPUS_FILE)
@@ -162,6 +166,51 @@ rescue-band:    # R4a: Eikos adjudicates the uncertain band
 rescue-apply:   # R4b: write corpus/data/sweden_quantum_works_with_rescue.jsonl (+ manifest)
 	$(P) $(PY) rescue_apply.py
 
+# ---- SweMetrics enrichment (docs/METHODOLOGY.md, 'SweMetrics enrichment'): a broader candidate pool from the
+# OpenAlex mirror and Swepub in the SweMetrics DuckDB, gated by the same embedding classifier as the rescue pass.
+# Needs SWEMETRICS_API_KEY in .env for swe-harvest (about 1 h of queries, resumable); everything after runs locally.
+SWE_EMB = --works ../corpus/data/swe_pool.jsonl --target-emb ../corpus/data/swe_pool_bge.npy --target-ids ../corpus/data/swe_pool_bge_ids.json --parts-dir caches/bge_partial_swe
+
+swe: swe-harvest swe-pool swe-embed swe-sample swe-label swe-train swe-band swe-apply
+
+# The weekly entry points: they work out what is already done and run only the rest (pipeline/swe_update.py).
+swe-plan:       # what is pending at each stage and how long it would take; runs nothing
+	$(P) $(PY) swe_update.py --plan
+
+swe-update:     # run every pending stage (harvest only if SweMetrics has a new snapshot; embeds/labels only new works)
+	$(P) $(PY) swe_update.py
+
+swe-apply:      # S5: decisions for every pool work; full records fetched only for newly admitted ones
+	$(P) $(PY) swepool_apply.py
+
+swe-harvest:    # S1a: raw candidates from SweMetrics (Swepub, then the OpenAlex text net)
+	$(P) $(PY) swepool_build.py swepub
+	$(P) $(PY) swepool_build.py textnet
+
+swe-pool:       # S1b: join, drop what the API corpus already evaluated, apply record gates, enrich abstracts -> swe_pool.jsonl
+	$(P) $(PY) swepool_build.py assemble
+
+swe-embed:      # S2: bge-large embeddings of the pool (same recipe and device as the rescue pass)
+	$(P) $(NPU_CAPPED) embed_missing_npu.py --device $(EMBED_DEVICE) $(SWE_EMB) --buckets 128:32,256:16
+	$(P) $(NPU_CAPPED) embed_missing_npu.py --device $(EMBED_DEVICE) $(SWE_EMB) --buckets 512:8 --tag long
+	$(P) $(NPU_CAPPED) embed_missing_npu.py --device $(EMBED_DEVICE) $(SWE_EMB) --merge
+
+swe-sample:     # S3a: uniform + targeted sample of the pool to label
+	$(P) $(PY) rescue_sample.py --pool ../corpus/data/swe_pool.jsonl --out ../corpus/data/swe_label_sample.jsonl
+
+swe-label:      # S3a: label that sample with Eikos-4B (Intel iGPU)
+	$(P) $(NPU_CAPPED) label_with_eikos.py --device $(LABEL_DEVICE) --in ../corpus/data/swe_label_sample.jsonl --out ../corpus/data/swe_label_sample_eikos.json
+
+swe-train:      # S3b: classifier + thresholds for THIS pool, writes the uncertain band
+	$(P) $(PY) rescue_train.py --prefix swe
+
+swe-integrate:  # S6: base corpus + SweMetrics extension -> the corpus `split` reads (also extends the embedding cache)
+	$(P) $(PY) swe_integrate.py
+
+swe-band:       # S4a: Eikos adjudicates the uncertain band
+	$(P) $(NPU_CAPPED) label_with_eikos.py --device $(LABEL_DEVICE) --in ../corpus/data/swe_band.jsonl --out ../corpus/data/swe_band_eikos.json
+	@if [ -s corpus/data/swe_band_extra.jsonl ]; then $(P) $(NPU_CAPPED) label_with_eikos.py --device $(LABEL_DEVICE) --in ../corpus/data/swe_band_extra.jsonl --out ../corpus/data/swe_band_extra_eikos.json; fi
+
 embed-npu:
 	$(P) $(NPU_RUN) --buckets 128:32,256:16
 	$(P) $(NPU_RUN) --buckets 512:8 --tag long
@@ -172,6 +221,16 @@ domains:
 
 paper-counts:
 	$(P) $(PY) build_paper_counts.py --works data/all_universities_works.jsonl --out data/paper_counts_geo.json
+
+# One global 2-D UMAP over every accepted work's cached bge embedding (no new embedding is computed;
+# CPU only, seeded). Positions go into the person-papers shards as the explorer's UMAP view.
+work-umap:
+	$(P) $(CAPPED) $(PY) -u build_work_umap.py
+
+# Per-person paper lists (year, citations, DOI, triangle and UMAP position) for the app's 3D paper explorer.
+# Must run against the SAME build that produced people_viz.json, or paper sets will not match the person records.
+person-papers: work-umap
+	$(P) $(PY) build_person_papers.py --people data/people_viz.json --out data/person_papers
 
 shares:
 	$(P) $(PY) build_domain_shares.py --in data/people_viz.json --out data/people_viz.json
@@ -192,16 +251,18 @@ links:
 collab:
 	$(P) $(PY) build_collaborations.py
 
-stage:   # collect the 5 JSONs the app loads into STAGE_DIR (does not touch the app)
+stage:   # collect the 5 JSONs the app loads into STAGE_DIR (does not touch the app), applying the GDPR opt-outs
 	mkdir -p $(STAGE_DIR)
-	cd pipeline/data && cp people_viz.json people_taxonomy.json paper_counts_geo.json patent_links.json collaborations.json $(abspath $(STAGE_DIR))/
-	@echo "Staged 5 JSON files in $(abspath $(STAGE_DIR)). Copy them to the app's public/data, or run: make publish"
+	$(P) $(PY) apply_optouts.py --out $(abspath $(STAGE_DIR))
+	@echo "Staged the app's JSON files (and person_papers/ when present) in $(abspath $(STAGE_DIR)). Copy them to the app's public/data, or run: make publish"
 
 publish:   # explicit: STAGE_DIR -> APP_PUBLIC (default is a sibling checkout ../open-alice/public/data)
 	@test -d $(STAGE_DIR) || { echo "STAGE_DIR=$(STAGE_DIR) does not exist: run 'make stage' (or 'make all') first"; exit 1; }
 	mkdir -p $(APP_PUBLIC)
 	cd $(STAGE_DIR) && cp people_viz.json people_taxonomy.json paper_counts_geo.json patent_links.json collaborations.json $(APP_PUBLIC)/
+	@if [ -d $(STAGE_DIR)/person_papers ]; then mkdir -p $(APP_PUBLIC)/person_papers && cp $(STAGE_DIR)/person_papers/*.json $(APP_PUBLIC)/person_papers/; fi
 
 # dedup rewrites people_viz.json (fuses split author records), then re-runs every id-keyed step, so links/collab come after it.
+# person-papers comes after dedup because the shards must match the FINAL people_viz.json.
 # `all` never touches the app: it ends with `stage`; run `make publish` explicitly.
-all: people merge taxonomy domains paper-counts shares hindex patch-patents dedup stage
+all: people merge taxonomy domains paper-counts shares hindex patch-patents dedup person-papers stage

@@ -1,0 +1,1152 @@
+{
+ "sv_0001": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2057891832",
+  "p_core": 0.1253
+ },
+ "sv_0002": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:254699",
+  "p_core": 0.5103
+ },
+ "sv_0003": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2166727259",
+  "p_core": 0.9484
+ },
+ "sv_0004": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2069285816",
+  "p_core": 0.5778
+ },
+ "sv_0005": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2133894469",
+  "p_core": 0.2343
+ },
+ "sv_0006": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2614520795",
+  "p_core": 0.1762
+ },
+ "sv_0007": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2787065866",
+  "p_core": 0.0003
+ },
+ "sv_0008": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2131773179",
+  "p_core": 0.0001
+ },
+ "sv_0009": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1426444",
+  "p_core": 0.5387
+ },
+ "sv_0010": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1969941437",
+  "p_core": 0.8344
+ },
+ "sv_0011": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6969409341",
+  "p_core": 0.8204
+ },
+ "sv_0012": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2072147460",
+  "p_core": 0.9713
+ },
+ "sv_0013": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:920654",
+  "p_core": 0.8764
+ },
+ "sv_0014": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2019811892",
+  "p_core": 0.8263
+ },
+ "sv_0015": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1046613",
+  "p_core": 0.6722
+ },
+ "sv_0016": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1993883098",
+  "p_core": 0.7455
+ },
+ "sv_0017": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1027166",
+  "p_core": 0.3646
+ },
+ "sv_0018": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W6989712431",
+  "p_core": 0.3643
+ },
+ "sv_0019": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7091031671",
+  "p_core": 0.9047
+ },
+ "sv_0020": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1416755",
+  "p_core": 0.1619
+ },
+ "sv_0021": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1361359",
+  "p_core": 0.8668
+ },
+ "sv_0022": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2009831449",
+  "p_core": 0.5453
+ },
+ "sv_0023": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1243144",
+  "p_core": 0.48
+ },
+ "sv_0024": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2156205620",
+  "p_core": 0.9187
+ },
+ "sv_0025": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2606408472",
+  "p_core": 0.9529
+ },
+ "sv_0026": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W4200360030",
+  "p_core": 0.8643
+ },
+ "sv_0027": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2079838502",
+  "p_core": 0.0044
+ },
+ "sv_0028": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1456532",
+  "p_core": 0.3963
+ },
+ "sv_0029": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W3164207924",
+  "p_core": 0.7215
+ },
+ "sv_0030": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4401306433",
+  "p_core": 0.6101
+ },
+ "sv_0031": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6947869698",
+  "p_core": 0.7744
+ },
+ "sv_0032": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2782086332",
+  "p_core": 0.9733
+ },
+ "sv_0033": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4380882189",
+  "p_core": 0.3789
+ },
+ "sv_0034": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2050059471",
+  "p_core": 0.0234
+ },
+ "sv_0035": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1507941",
+  "p_core": 0.9575
+ },
+ "sv_0036": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W3154272929",
+  "p_core": 0.003
+ },
+ "sv_0037": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W1986420731",
+  "p_core": 0.1389
+ },
+ "sv_0038": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W3006705990",
+  "p_core": 0.9518
+ },
+ "sv_0039": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4386428416",
+  "p_core": 0.3881
+ },
+ "sv_0040": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1617546",
+  "p_core": 0.2556
+ },
+ "sv_0041": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2517217680",
+  "p_core": 0.746
+ },
+ "sv_0042": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2537789359",
+  "p_core": 0.2964
+ },
+ "sv_0043": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:274358",
+  "p_core": 0.8809
+ },
+ "sv_0044": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W7162628848",
+  "p_core": 0.1075
+ },
+ "sv_0045": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1583236",
+  "p_core": 0.8607
+ },
+ "sv_0046": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W6969225001",
+  "p_core": 0.0906
+ },
+ "sv_0047": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W4319346752",
+  "p_core": 0.8518
+ },
+ "sv_0048": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1019774",
+  "p_core": 0.6192
+ },
+ "sv_0049": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1069560",
+  "p_core": 0.957
+ },
+ "sv_0050": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4401006364",
+  "p_core": 0.2621
+ },
+ "sv_0051": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1992629111",
+  "p_core": 0.9794
+ },
+ "sv_0052": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7221050929",
+  "p_core": 0.7886
+ },
+ "sv_0053": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W35090136",
+  "p_core": 0.308
+ },
+ "sv_0054": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1099314",
+  "p_core": 0.5516
+ },
+ "sv_0055": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1552033",
+  "p_core": 0.1256
+ },
+ "sv_0056": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2100951924",
+  "p_core": 0.8773
+ },
+ "sv_0057": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1974716362",
+  "p_core": 0.9793
+ },
+ "sv_0058": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:169963",
+  "p_core": 0.2278
+ },
+ "sv_0059": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2607258355",
+  "p_core": 0.9221
+ },
+ "sv_0060": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6989228044",
+  "p_core": 0.2011
+ },
+ "sv_0061": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2025133586",
+  "p_core": 0.99
+ },
+ "sv_0062": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2909447528",
+  "p_core": 0.0005
+ },
+ "sv_0063": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W4246945769",
+  "p_core": 0.706
+ },
+ "sv_0064": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4416345330",
+  "p_core": 0.4514
+ },
+ "sv_0065": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2151568601",
+  "p_core": 0.2157
+ },
+ "sv_0066": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W7220949495",
+  "p_core": 0.6828
+ },
+ "sv_0067": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2172045891",
+  "p_core": 0.0001
+ },
+ "sv_0068": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4367313410",
+  "p_core": 0.1076
+ },
+ "sv_0069": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:731619",
+  "p_core": 0.7558
+ },
+ "sv_0070": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6912725377",
+  "p_core": 0.833
+ },
+ "sv_0071": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4386897993",
+  "p_core": 0.1042
+ },
+ "sv_0072": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2321542701",
+  "p_core": 0.7323
+ },
+ "sv_0073": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W7061396880",
+  "p_core": 0.1507
+ },
+ "sv_0074": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W4290823174",
+  "p_core": 0.8426
+ },
+ "sv_0075": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7220666876",
+  "p_core": 0.9101
+ },
+ "sv_0076": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6967785533",
+  "p_core": 0.7992
+ },
+ "sv_0077": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:164609",
+  "p_core": 0.524
+ },
+ "sv_0078": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2036100623",
+  "p_core": 0.6441
+ },
+ "sv_0079": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W3024903778",
+  "p_core": 0.3254
+ },
+ "sv_0080": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1662434888",
+  "p_core": 0.9803
+ },
+ "sv_0081": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W3004014624",
+  "p_core": 0.3268
+ },
+ "sv_0082": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2950428866",
+  "p_core": 0.4234
+ },
+ "sv_0083": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2512084875",
+  "p_core": 0.6813
+ },
+ "sv_0084": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W4415225633",
+  "p_core": 0.0307
+ },
+ "sv_0085": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6931376408",
+  "p_core": 0.9097
+ },
+ "sv_0086": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W7102390817",
+  "p_core": 0.6786
+ },
+ "sv_0087": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2058687923",
+  "p_core": 0.2235
+ },
+ "sv_0088": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2087833384",
+  "p_core": 0.8761
+ },
+ "sv_0089": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W6930435680",
+  "p_core": 0.4091
+ },
+ "sv_0090": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7160996339",
+  "p_core": 0.8762
+ },
+ "sv_0091": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2128336582",
+  "p_core": 0.8871
+ },
+ "sv_0092": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6940938435",
+  "p_core": 0.1693
+ },
+ "sv_0093": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2165709052",
+  "p_core": 0.1321
+ },
+ "sv_0094": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1104326",
+  "p_core": 0.9877
+ },
+ "sv_0095": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2009722268",
+  "p_core": 0.947
+ },
+ "sv_0096": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:918844",
+  "p_core": 0.1009
+ },
+ "sv_0097": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2067727062",
+  "p_core": 0.9532
+ },
+ "sv_0098": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4293696349",
+  "p_core": 0.2842
+ },
+ "sv_0099": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2017103491",
+  "p_core": 0.9535
+ },
+ "sv_0100": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:232829",
+  "p_core": 0.3503
+ },
+ "sv_0101": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1120892",
+  "p_core": 0.9983
+ },
+ "sv_0102": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:444708",
+  "p_core": 0.1804
+ },
+ "sv_0103": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1331405",
+  "p_core": 0.1047
+ },
+ "sv_0104": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2126569509",
+  "p_core": 0.0102
+ },
+ "sv_0105": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1423565",
+  "p_core": 0.2298
+ },
+ "sv_0106": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W1982193004",
+  "p_core": 0.9708
+ },
+ "sv_0107": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W4206359701",
+  "p_core": 0.8115
+ },
+ "sv_0108": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2142804613",
+  "p_core": 0.0065
+ },
+ "sv_0109": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6968320264",
+  "p_core": 0.5747
+ },
+ "sv_0110": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1449454",
+  "p_core": 0.8282
+ },
+ "sv_0111": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6966674743",
+  "p_core": 0.2356
+ },
+ "sv_0112": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1560595",
+  "p_core": 0.5635
+ },
+ "sv_0113": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2518876308",
+  "p_core": 0.0025
+ },
+ "sv_0114": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2486911800",
+  "p_core": 0.265
+ },
+ "sv_0115": {
+  "stratum": "low_score",
+  "work_id": "swepub:1377046",
+  "p_core": 0.0001
+ },
+ "sv_0116": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2087334685",
+  "p_core": 0.2574
+ },
+ "sv_0117": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1461044",
+  "p_core": 0.9437
+ },
+ "sv_0118": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1966536957",
+  "p_core": 0.827
+ },
+ "sv_0119": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1557417785",
+  "p_core": 0.5592
+ },
+ "sv_0120": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1033837",
+  "p_core": 0.7757
+ },
+ "sv_0121": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W3089494398",
+  "p_core": 0.9441
+ },
+ "sv_0122": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2403908985",
+  "p_core": 0.3348
+ },
+ "sv_0123": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2008178702",
+  "p_core": 0.9679
+ },
+ "sv_0124": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2079585839",
+  "p_core": 0.4896
+ },
+ "sv_0125": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W1980028256",
+  "p_core": 0.7023
+ },
+ "sv_0126": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7042374837",
+  "p_core": 0.949
+ },
+ "sv_0127": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2023789947",
+  "p_core": 0.5464
+ },
+ "sv_0128": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W4385874863",
+  "p_core": 0.0014
+ },
+ "sv_0129": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1620077",
+  "p_core": 0.5451
+ },
+ "sv_0130": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1971353224",
+  "p_core": 0.9118
+ },
+ "sv_0131": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W1992015006",
+  "p_core": 0.7269
+ },
+ "sv_0132": {
+  "stratum": "low_score",
+  "work_id": "swepub:663162",
+  "p_core": 0.0001
+ },
+ "sv_0133": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7084389248",
+  "p_core": 0.7876
+ },
+ "sv_0134": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4411086949",
+  "p_core": 0.3979
+ },
+ "sv_0135": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:942831",
+  "p_core": 0.9816
+ },
+ "sv_0136": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2151214355",
+  "p_core": 0.0098
+ },
+ "sv_0137": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2034214049",
+  "p_core": 0.004
+ },
+ "sv_0138": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W3125855234",
+  "p_core": 0.0001
+ },
+ "sv_0139": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4392697532",
+  "p_core": 0.1582
+ },
+ "sv_0140": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2766095945",
+  "p_core": 0.2578
+ },
+ "sv_0141": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W4296793758",
+  "p_core": 0.0149
+ },
+ "sv_0142": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2034920175",
+  "p_core": 0.5469
+ },
+ "sv_0143": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6958310463",
+  "p_core": 0.6369
+ },
+ "sv_0144": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2787159933",
+  "p_core": 0.5596
+ },
+ "sv_0145": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7101853770",
+  "p_core": 0.9696
+ },
+ "sv_0146": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W1519750557",
+  "p_core": 0.718
+ },
+ "sv_0147": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4210685719",
+  "p_core": 0.3526
+ },
+ "sv_0148": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2520626889",
+  "p_core": 0.3037
+ },
+ "sv_0149": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2197820338",
+  "p_core": 0.9966
+ },
+ "sv_0150": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1152719",
+  "p_core": 0.8788
+ },
+ "sv_0151": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6997067090",
+  "p_core": 0.9958
+ },
+ "sv_0152": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:723650",
+  "p_core": 0.9133
+ },
+ "sv_0153": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6979375214",
+  "p_core": 0.5303
+ },
+ "sv_0154": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:202964",
+  "p_core": 0.9976
+ },
+ "sv_0155": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2999647278",
+  "p_core": 0.1364
+ },
+ "sv_0156": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2154037978",
+  "p_core": 0.0001
+ },
+ "sv_0157": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W7080691150",
+  "p_core": 0.5372
+ },
+ "sv_0158": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W434172307",
+  "p_core": 0.4567
+ },
+ "sv_0159": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W7139130481",
+  "p_core": 0.0005
+ },
+ "sv_0160": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4226325131",
+  "p_core": 0.1215
+ },
+ "sv_0161": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2735130069",
+  "p_core": 0.4672
+ },
+ "sv_0162": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1116459",
+  "p_core": 0.2731
+ },
+ "sv_0163": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W1989609681",
+  "p_core": 0.761
+ },
+ "sv_0164": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1556781",
+  "p_core": 0.9979
+ },
+ "sv_0165": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2761453011",
+  "p_core": 0.5058
+ },
+ "sv_0166": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2083152584",
+  "p_core": 0.1179
+ },
+ "sv_0167": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2076969900",
+  "p_core": 0.2746
+ },
+ "sv_0168": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4405270533",
+  "p_core": 0.6219
+ },
+ "sv_0169": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2952413135",
+  "p_core": 0.9193
+ },
+ "sv_0170": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2061768550",
+  "p_core": 0.3546
+ },
+ "sv_0171": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:776287",
+  "p_core": 0.9253
+ },
+ "sv_0172": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6920404250",
+  "p_core": 0.3364
+ },
+ "sv_0173": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2001608571",
+  "p_core": 0.0002
+ },
+ "sv_0174": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W1987943163",
+  "p_core": 0.0375
+ },
+ "sv_0175": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7081547024",
+  "p_core": 0.9479
+ },
+ "sv_0176": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1403639",
+  "p_core": 0.6348
+ },
+ "sv_0177": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1555731",
+  "p_core": 0.6049
+ },
+ "sv_0178": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W7125375616",
+  "p_core": 0.8736
+ },
+ "sv_0179": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:274078",
+  "p_core": 0.9901
+ },
+ "sv_0180": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:471153",
+  "p_core": 0.2724
+ },
+ "sv_0181": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2062661630",
+  "p_core": 0.8315
+ },
+ "sv_0182": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2016031618",
+  "p_core": 0.0132
+ },
+ "sv_0183": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2014664697",
+  "p_core": 0.9723
+ },
+ "sv_0184": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W7036134247",
+  "p_core": 0.2877
+ },
+ "sv_0185": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7061564077",
+  "p_core": 0.9868
+ },
+ "sv_0186": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7082315528",
+  "p_core": 0.9914
+ },
+ "sv_0187": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1508517",
+  "p_core": 0.3472
+ },
+ "sv_0188": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6921635647",
+  "p_core": 0.8674
+ },
+ "sv_0189": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2345273087",
+  "p_core": 0.72
+ },
+ "sv_0190": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W2553554712",
+  "p_core": 0.7734
+ },
+ "sv_0191": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W6910390856",
+  "p_core": 0.756
+ },
+ "sv_0192": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W1966950864",
+  "p_core": 0.0387
+ },
+ "sv_0193": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W1978754368",
+  "p_core": 0.5117
+ },
+ "sv_0194": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1615771",
+  "p_core": 0.9861
+ },
+ "sv_0195": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2339679279",
+  "p_core": 0.7434
+ },
+ "sv_0196": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W3098574009",
+  "p_core": 0.406
+ },
+ "sv_0197": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W1531370304",
+  "p_core": 0.0136
+ },
+ "sv_0198": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7062571433",
+  "p_core": 0.959
+ },
+ "sv_0199": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7215121463",
+  "p_core": 0.9941
+ },
+ "sv_0200": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7042279870",
+  "p_core": 0.9034
+ },
+ "sv_0201": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1053167",
+  "p_core": 0.8407
+ },
+ "sv_0202": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:283798",
+  "p_core": 0.9819
+ },
+ "sv_0203": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W4322626382",
+  "p_core": 0.7251
+ },
+ "sv_0204": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4391631382",
+  "p_core": 0.5225
+ },
+ "sv_0205": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1609329",
+  "p_core": 0.6545
+ },
+ "sv_0206": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W3106329460",
+  "p_core": 0.2307
+ },
+ "sv_0207": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2021955594",
+  "p_core": 0.9186
+ },
+ "sv_0208": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W2170837376",
+  "p_core": 0.6161
+ },
+ "sv_0209": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W2269764428",
+  "p_core": 0.0012
+ },
+ "sv_0210": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W6999837397",
+  "p_core": 0.1319
+ },
+ "sv_0211": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W4387384537",
+  "p_core": 0.1942
+ },
+ "sv_0212": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:1437112",
+  "p_core": 0.3495
+ },
+ "sv_0213": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W1989924738",
+  "p_core": 0.7804
+ },
+ "sv_0214": {
+  "stratum": "band_rejected",
+  "work_id": "swepub:330003",
+  "p_core": 0.2132
+ },
+ "sv_0215": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W4389672072",
+  "p_core": 0.9865
+ },
+ "sv_0216": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W4416048506",
+  "p_core": 0.8736
+ },
+ "sv_0217": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W1968211018",
+  "p_core": 0.0008
+ },
+ "sv_0218": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2032411250",
+  "p_core": 0.9741
+ },
+ "sv_0219": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W1990419542",
+  "p_core": 0.2756
+ },
+ "sv_0220": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W4399487945",
+  "p_core": 0.3216
+ },
+ "sv_0221": {
+  "stratum": "clf_oa",
+  "work_id": "https://openalex.org/W7080974883",
+  "p_core": 0.8393
+ },
+ "sv_0222": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W2030703766",
+  "p_core": 0.3018
+ },
+ "sv_0223": {
+  "stratum": "low_score",
+  "work_id": "https://openalex.org/W7154015681",
+  "p_core": 0.0003
+ },
+ "sv_0224": {
+  "stratum": "band_rejected",
+  "work_id": "https://openalex.org/W6920314270",
+  "p_core": 0.1902
+ },
+ "sv_0225": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:343246",
+  "p_core": 0.7993
+ },
+ "sv_0226": {
+  "stratum": "eikos_oa",
+  "work_id": "https://openalex.org/W3153033316",
+  "p_core": 0.4591
+ },
+ "sv_0227": {
+  "stratum": "low_score",
+  "work_id": "swepub:169880",
+  "p_core": 0.0055
+ },
+ "sv_0228": {
+  "stratum": "swepub_only",
+  "work_id": "swepub:1121001",
+  "p_core": 0.6901
+ },
+ "sv_0229": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W3043238685",
+  "p_core": 0.8859
+ },
+ "sv_0230": {
+  "stratum": "swepub_country",
+  "work_id": "https://openalex.org/W2981249074",
+  "p_core": 0.5432
+ }
+}

@@ -20,3 +20,4 @@ dedup/out_prev/
 *.tmp
 *.npy
 *.npz
+private/
